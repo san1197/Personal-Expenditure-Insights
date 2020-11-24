@@ -24,6 +24,7 @@ g.add((h,i,money))
 g.add((h,e,money2))
 g.add((h,w,money3))
 g.add((k,w,money4))
+g.add((k,e,money2))
 
 
 # To derive insights using OWL
@@ -37,39 +38,37 @@ listofDic = []
 count = 1
 
 
+
+
 for s,p,o in g:
 	if str(s) not in users:
 		users.append(str(s))
 
+
 for i in range(len(users)):
-	dictionary['User'] = users[i]
-	listofDic.append(dictionary)	
-	dictionary = {}
+	totalIncome = 0
+	totalExpense = 0
+	maxExpense = 0
+	maxExpenseOn = ''
+	username = ''
+	for s,p,o in g:
+		if(str(s) == users[i]):
+			username = str(s)
+			appendstar = "*"
+			appendstar += str(p)
+			typeNS = onto.search(iri = appendstar)
+			if(IncType[0] in list(typeNS[0].ancestors())):
+				totalIncome += int(o)
+			elif(ExpType[0] in list(typeNS[0].ancestors())):
+				totalExpense += int(o)
+				maxExpense = max(maxExpense,int(o))
+				maxExpenseOn = str(p)		
+	print("\n")
+	print("User:",username)
+	print("Total Income:", totalIncome)
+	print("Total Expense:", totalExpense)
+	print("Maximum Expense:",maxExpense,"Spent on",maxExpenseOn)
+		
 
 
-for s,p,o in g:
-	appendstar = "*"
-	appendstar += str(p)
-	typeNS = onto.search(iri = appendstar)
-	if(IncType[0] in list(typeNS[0].ancestors())):
-		totalIncome += int(o)
-	elif(ExpType[0] in list(typeNS[0].ancestors())):
-		totalExpense += int(o)
-		maxExpense = max(maxExpense,int(o))
-		maxExpenseOn = str(p)
-	for i in range(len(listofDic)):
-		if(listofDic[i]['User'] == str(s)):
-			listofDic[i]['totalIncome'] = totalIncome
-			listofDic[i]['totalExpense'] = totalExpense
-			listofDic[i]['maximumExpense'] = maxExpense
-			listofDic[i]['maximumExpenseOn'] = maxExpenseOn
-			listofDic[i]['User'] = str(s)
-
-print(listofDic)
-
-
-print("User",listofDic[1]['User'])
-print("Total Income", totalIncome)
-print("Total Expense", totalExpense)
-print("Maximum Expense of",maxExpense,"Spent on",maxExpenseOn)
 
