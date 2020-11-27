@@ -7,7 +7,7 @@ import spacy
 '''Extracting sub, pred and obj from unstructured data'''
 nlp = spacy.load('en_core_web_sm')
 
-file_doc = open("input.txt", "r")
+file_doc = open("inputemp.txt", "r")
 
 doc = file_doc.read()
 
@@ -30,6 +30,7 @@ for token in complete_doc:
 i = 0
 j = 0
 k = 0
+
 while i < len(nouns) and j < len(values) and k < len(pronoun):
     spo_values = [pronoun[k], nouns[i], values[j]]
     spo.append(spo_values)
@@ -37,34 +38,35 @@ while i < len(nouns) and j < len(values) and k < len(pronoun):
     j += 1
     k += 1
 
-
+# print(spo)
 
 onto = get_ontology("https://raw.githubusercontent.com/san1197/SER531-Project---Group-19/main/categories.owl").load()
 namespace = onto.get_namespace("https://raw.githubusercontent.com/san1197/SER531-Project---Group-19/main/categories.owl")
-IncType = onto.search(iri = "*Income")
-ExpType = onto.search(iri = "*Expense")
+IncType = onto.search(iri = "*income")
+ExpType = onto.search(iri = "*expense")
 
 # To add N-Triples
 g = Graph()
 
 
 for sub, pred, obj in spo:
-	sub_url = URIRef(sub)
+    sub_url = URIRef(sub)
 
-	#Mapping predicate to OWL classes
-	if pred == 'groceries':
-		pred_url = URIRef('Grocery')
-	elif pred == 'merchandise':
-		pred_url = URIRef('Clothing')
-	elif pred == 'transfer':
-		pred_url = URIRef('Income')
-	elif pred == 'travel':
-		pred_url = URIRef('TravelInsurance')
-	else:
-		pred_url = URIRef('Health')
-	
-	obj_url = Literal(obj)
-	g.add((sub_url, pred_url, obj_url))
+    # #Mapping predicate to OWL classes
+    # if pred == 'groceries':
+    # 	pred_url = URIRef('Grocery')
+    # elif pred == 'merchandise':
+    # 	pred_url = URIRef('Clothing')
+    # elif pred == 'transfer':
+    # 	pred_url = URIRef('Income')
+    # elif pred == 'travel':
+    # 	pred_url = URIRef('TravelInsurance')
+    # else:
+    # 	pred_url = URIRef('Health')
+
+    pred_url = URIRef(pred)
+    obj_url = Literal(obj)
+    g.add((sub_url, pred_url, obj_url))
 
 
 # To derive insights using OWL
@@ -77,38 +79,31 @@ dictionary = {}
 listofDic = []
 count = 1
 
-
-
-
 for s,p,o in g:
-	if str(s) not in users:
-		users.append(str(s))
+    if str(s) not in users:
+        users.append(str(s))
 
 
 for i in range(len(users)):
-	totalIncome = 0
-	totalExpense = 0
-	maxExpense = 0
-	maxExpenseOn = ''
-	username = ''
-	for s,p,o in g:
-		if(str(s) == users[i]):
-			username = str(s)
-			appendstar = "*"
-			appendstar += str(p)
-			typeNS = onto.search(iri = appendstar)
-			if(IncType[0] in list(typeNS[0].ancestors())):
-				totalIncome += float(o)
-			elif(ExpType[0] in list(typeNS[0].ancestors())):
-				totalExpense += float(o)
-				maxExpense = max(maxExpense,float(o))
-				maxExpenseOn = str(p)		
-	print("\n")
-	print("User:",username)
-	print("Total Income:", totalIncome)
-	print("Total Expense:", totalExpense)
-	print("Maximum Expense:",maxExpense,"Spent on",maxExpenseOn)
-		
-
-
-
+    totalIncome = 0
+    totalExpense = 0
+    maxExpense = 0
+    maxExpenseOn = ''
+    username = ''
+    for s,p,o in g:
+        if(str(s) == users[i]):
+            username = str(s)
+            appendstar = "*"
+            appendstar += str(p)
+            typeNS = onto.search(iri = appendstar)
+            if(IncType[0] in list(typeNS[0].ancestors())):
+                totalIncome += float(o)
+            elif(ExpType[0] in list(typeNS[0].ancestors())):
+                totalExpense += float(o)
+                maxExpense = max(maxExpense,float(o))
+                maxExpenseOn = str(p)
+    print("\n")
+    print("User:",username)
+    print("Total Income:", totalIncome)
+    print("Total Expense:", totalExpense)
+    print("Maximum Expense:",maxExpense,"Spent on",maxExpenseOn)
