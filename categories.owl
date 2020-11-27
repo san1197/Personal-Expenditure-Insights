@@ -5,8 +5,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:category="http://www.semanticweb.org/admin/ontologies/2020/10/category#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category"/>
     
 
@@ -479,96 +478,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#wifi">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#home"/>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#T1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#T1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#wages"/>
-        <doneBy rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#User1"/>
-        <ofAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</ofAmount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#T2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#T2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#gifts"/>
-        <ofAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</ofAmount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#T3 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#T3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#rent"/>
-        <ofAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</ofAmount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#T4 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#T4">
-        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#wifi"/>
-        <ofAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</ofAmount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#T5 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#T5">
-        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#petfood"/>
-        <ofAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ofAmount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#T6 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#T6">
-        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#shares"/>
-        <ofAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</ofAmount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#User1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#User1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#User"/>
-        <receivedFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#T1"/>
-        <receivedFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#T2"/>
-        <spentOn rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#T3"/>
-        <spentOn rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#T4"/>
-        <hasName>Harry</hasName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#User2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#User2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#User"/>
-        <receivedFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#T6"/>
-        <spentOn rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#T5"/>
-        <hasName>Larry</hasName>
-    </owl:NamedIndividual>
 </rdf:RDF>
 
 
