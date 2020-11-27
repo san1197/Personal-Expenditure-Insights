@@ -31,25 +31,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#receivedFrom -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#receivedFrom">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#User"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#income"/>
-        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#spentOn"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#spentOn -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#spentOn">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#User"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#expense"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
