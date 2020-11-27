@@ -22,6 +22,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#doneBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#doneBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Transaction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#User"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#receivedFrom -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#receivedFrom">
@@ -487,6 +497,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#T1">
         <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#wages"/>
+        <doneBy rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#User1"/>
         <ofAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</ofAmount>
     </owl:NamedIndividual>
     
