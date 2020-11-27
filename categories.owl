@@ -26,7 +26,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#receivedFrom">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#User"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Income"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#income"/>
         <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#spentOn"/>
     </owl:ObjectProperty>
     
@@ -36,7 +36,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#spentOn">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#User"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Expense"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#expense"/>
     </owl:ObjectProperty>
     
 
@@ -83,298 +83,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Cable -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Cable">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Home"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Cleaning -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Cleaning">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Personal_Supplies"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Clothing -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Clothing">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Personal_Supplies"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Concerts -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Concerts">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Entertainment"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Doctor -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Doctor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Health"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Drugs -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Drugs">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Health"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Electricity -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Electricity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Home"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Entertainment -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Entertainment">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Expense"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Expense -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Expense">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Transaction"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Income"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Food -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Food">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Expense"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Fuel -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Fuel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Transportation"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Furnishing -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Furnishing">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Home"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Gifts -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Gifts">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Income"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Grocery -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Grocery">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Food"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Health -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Health">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Expense"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#HealthInsurance -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#HealthInsurance">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Health"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Home -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Home">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Expense"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Income -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Income">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Transaction"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Interests -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Interests">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Income"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Lawn -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Lawn">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Home"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Movies -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Movies">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Entertainment"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Personal_Supplies -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Personal_Supplies">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Expense"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#PetFood -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#PetFood">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Food"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#PublicTransport -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#PublicTransport">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Transportation"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Refunds -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Refunds">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Income"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Rent -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Rent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Home"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#RentalInsurance -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#RentalInsurance">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Home"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Repairs -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Repairs">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Transportation"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Salon -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Salon">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Personal_Supplies"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Shares -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Shares">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Income"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Shopping -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Shopping">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Entertainment"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Sports -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Sports">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Entertainment"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Takeout -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Takeout">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Food"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Taxi -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Taxi">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Transportation"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Transaction -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Transaction"/>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Transportation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Transportation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Expense"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#TravelInsurance -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#TravelInsurance">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Transportation"/>
-    </owl:Class>
     
 
 
@@ -384,26 +95,379 @@
     
 
 
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Vacation -->
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#cable -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Vacation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Entertainment"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#cable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#home"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Wages -->
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#cleaning -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Wages">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Income"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#cleaning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#personal"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#Wifi -->
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#clothing -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#Wifi">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Home"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#clothing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#personal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#concerts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#concerts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#entertainment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#deposit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#deposit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#income"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#doctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#doctor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#health"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#education -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#education">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#expense"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#electricity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#electricity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#home"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#entertainment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#entertainment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#expense"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#expense -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#expense">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Transaction"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#income"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#food">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#expense"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#fuel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#fuel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#transportation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#furnishing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#furnishing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#home"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#gifts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#gifts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#income"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#grocery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#grocery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#health -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#health">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#expense"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#healthinsurance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#healthinsurance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#health"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#home -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#home">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#expense"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#income -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#income">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Transaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#interests -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#interests">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#income"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#lawn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#lawn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#home"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#lyft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#lyft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#transportation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#merchandise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#merchandise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#personal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#movies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#movies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#entertainment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#personal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#personal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#expense"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#petfood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#petfood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#pharmacy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#pharmacy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#health"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#publictransport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#publictransport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#transportation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#refunds -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#refunds">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#income"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#rent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#rent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#home"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#rentalInsurance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#rentalInsurance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#home"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#repairs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#repairs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#transportation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#salon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#salon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#personal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#shares -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#shares">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#income"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#shopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#shopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#entertainment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#sports -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#sports">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#entertainment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#takeout -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#takeout">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#taxi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#taxi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#transportation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#transfer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#transfer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#income"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#transportation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#transportation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#expense"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#travel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#travel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#transportation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#travelinsurance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#travelinsurance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#transportation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#tuition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#tuition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#education"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#uber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#uber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#transportation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#vacation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#vacation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#entertainment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#wages -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#wages">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#income"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#wifi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#wifi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#home"/>
     </owl:Class>
     
 
@@ -422,7 +486,7 @@
     <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#T1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#T1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Wages"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#wages"/>
         <ofAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</ofAmount>
     </owl:NamedIndividual>
     
@@ -431,7 +495,7 @@
     <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#T2 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#T2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Gifts"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#gifts"/>
         <ofAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</ofAmount>
     </owl:NamedIndividual>
     
@@ -440,7 +504,7 @@
     <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#T3 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#T3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Rent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#rent"/>
         <ofAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</ofAmount>
     </owl:NamedIndividual>
     
@@ -449,7 +513,7 @@
     <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#T4 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#T4">
-        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Wifi"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#wifi"/>
         <ofAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</ofAmount>
     </owl:NamedIndividual>
     
@@ -458,7 +522,7 @@
     <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#T5 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#T5">
-        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#PetFood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#petfood"/>
         <ofAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ofAmount>
     </owl:NamedIndividual>
     
@@ -467,7 +531,7 @@
     <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#T6 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#T6">
-        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#Shares"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#shares"/>
         <ofAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</ofAmount>
     </owl:NamedIndividual>
     
