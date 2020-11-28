@@ -57,6 +57,13 @@ for sub, pred, obj in spo:
     g.add((sub_url, pred_url, obj_url))
 
 
+# f = open("triples.txt", "w")
+# for s,p,o in g:
+#     string = str(s) + "," + str(p) + "," +str(o)
+#     f.write(string)
+#     f.write("\n")
+# f.close()
+
 # To derive insights using OWL
 totalIncome = 0
 totalExpense = 0
@@ -66,16 +73,21 @@ users = []
 dictionary = {}
 listofDic = []
 count = 1
-
+expenseTypes = []
 for s,p,o in g:
     if str(s) not in users:
         users.append(str(s))
+
+for s,p,o in g:
+    if str(p) not in expenseTypes:
+        expenseTypes.append(str(p))
 
 for i in range(len(users)):
         #Adding users
         usertag = "U"
         usertag += str(i)
         user1 = onto.User(usertag,hasName=users[i])
+
 
 t = 0
 for s,p,o in g:
@@ -129,26 +141,170 @@ onto.save(file = "categorieswithIndividuals.owl")
 g1 = Graph()
 g1.parse("categorieswithIndividuals.owl")
 
-qres = g1.query(
+# Eref = URIRef("http://www.semanticweb.org/admin/ontologies/2020/10/category#expense")
+# Iref = URIRef("http://www.semanticweb.org/admin/ontologies/2020/10/category#income")
+
+# totalQuery = g1.query(
+#     '''
+#     PREFIX ie: <http://www.semanticweb.org/admin/ontologies/2020/10/category#>
+#     PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+#     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+#     PREFIX owl: <http://www.w3.org/2002/07/owl#>
+#     SELECT ?p ?a ?name ?log ?superClass
+#         WHERE {
+#             ?p rdf:type ie:User.
+#             ?p ie:hasName ?name.
+#             ?t ie:doneBy ?p.
+#             ?t ie:ofType ?log.
+#             ?t ie:ofAmount ?a.
+#             ?log rdfs:subClassOf ?parentClass.
+#             ?parentClass rdfs:subClassOf ?superClass.
+#             }
+#             ORDER BY ?name''')
+#
+#
+# for r in totalQuery:
+#     print(r[2],"spent",r[1],"on",r[3],"as", r[4])
+#     break
+
+
+
+
+incomeQuery = g1.query(
     '''
     PREFIX ie: <http://www.semanticweb.org/admin/ontologies/2020/10/category#>
     PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     PREFIX owl: <http://www.w3.org/2002/07/owl#>
-    SELECT ?p ?a ?name ?logType ?log ?superClass
+    SELECT DISTINCT ?p ?a ?name ?log
         WHERE {
             ?p rdf:type ie:User.
             ?p ie:hasName ?name.
             ?t ie:doneBy ?p.
             ?t ie:ofType ?log.
-            ?t rdf:type ?logType.
+            ?t ie:ofAmount ?a.
+            ?log rdfs:subClassOf ie:income.
+            }
+            ORDER BY ?name''')
+
+totalIncomeList = []
+maxIncomeList = []
+maxIncomeOnList = []
+userlist = []
+for i in range(len(users)):
+    totalIncome = 0
+    maxIncome = 0
+    maxIncomeOn = ''
+    username = ''
+    for r in incomeQuery:
+        incomeType = str(r[3]).split("#")
+        if(str(r[2]) == users[i]):
+            username = r[2]
+            totalIncome += float(r[1])
+            maxIncome = max(maxIncome,float(r[1]))
+            maxIncomeOn = incomeType[1]
+    # print("User",username)
+    # print("Total Income",totalIncome)
+    # print("Maximum Income",maxIncome,"from",maxIncomeOn)
+    # print("\n")
+
+    userlist.append(str(username))
+    totalIncomeList.append(totalIncome)
+    maxIncomeList.append(maxIncome)
+    maxIncomeOnList.append(maxIncomeOn)
+
+# print(userlist,totalIncomeList,maxIncomeList,maxIncomeOnList)
+
+
+
+totalExpenseList = []
+maxExpenseList = []
+maxExpenseOnList = []
+userlist2 = []
+expenseQuery = g1.query(
+    '''
+    PREFIX ie: <http://www.semanticweb.org/admin/ontologies/2020/10/category#>
+    PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    SELECT ?p ?a ?name ?log
+        WHERE {
+            ?p rdf:type ie:User.
+            ?p ie:hasName ?name.
+            ?t ie:doneBy ?p.
+            ?t ie:ofType ?log.
             ?t ie:ofAmount ?a.
             ?log rdfs:subClassOf ?parentClass.
-            ?parentClass rdfs:subClassOf ?superClass.
-            }''')
+            ?parentClass rdfs:subClassOf ie:expense.
+            }
+            ORDER BY ?name''')
 
 
-for r in qres:
-    print(r[2],"spent",r[1],"on",r[4],"as", r[5])
-    print(type(r[5]))
-    break
+for i in range(len(users)):
+    totalIncome = 0
+    maxExpense = 0
+    maxExpenseOn = ''
+    username = ''
+    for r in expenseQuery:
+        expenseType = str(r[3]).split("#")
+        if(str(r[2]) == users[i]):
+            username = r[2]
+            totalIncome += float(r[1])
+            maxIncome = max(maxIncome,float(r[1]))
+            maxIncomeOn = expenseType[1]
+
+    userlist2.append(str(username))
+    totalExpenseList.append(totalIncome)
+    maxExpenseList.append(maxIncome)
+    maxExpenseOnList.append(maxIncomeOn)
+
+print("Choose from the below")
+print("1.Total Incomes")
+print("2.Total Expenses")
+print("3.Maximum Income")
+print("4.Maximum Expense")
+inp = input()
+
+import matplotlib.pyplot as plt
+plt.style.use('ggplot')
+
+if(int(inp) == 1):
+    x = userlist
+    energy = totalIncomeList
+
+    x_pos = [i for i, _ in enumerate(x)]
+
+    plt.bar(x_pos, energy, color='green')
+    plt.xlabel("Income")
+    plt.ylabel("Dollars($)")
+    plt.title("Total Income Graph")
+    plt.xticks(x_pos, x)
+    plt.show()
+
+elif(int(inp) == 2):
+    x = userlist
+    energy = totalExpenseList
+
+    x_pos = [i for i, _ in enumerate(x)]
+
+    plt.bar(x_pos, energy, color='green')
+    plt.xlabel("Expense")
+    plt.ylabel("Dollars($)")
+    plt.title("Total Expense Graph")
+
+    plt.xticks(x_pos, x)
+    plt.show()
+
+elif(int(inp) == 3):
+        cars = userlist
+        data = maxIncomeList
+        fig = plt.figure(figsize =(10, 7))
+        plt.pie(data, labels = cars)
+        plt.show()
+
+elif(int(inp) == 4):
+        cars = userlist
+        data = maxExpenseList
+        fig = plt.figure(figsize =(10, 7))
+        plt.pie(data, labels = cars)
+        plt.show()
