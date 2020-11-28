@@ -97,12 +97,7 @@ for s,p,o in g:
     uu += userkill[1]
     usersearch = onto.search(iri = uu)
     t1 = onto.Transaction(ttag,ofType=typeforEI,ofAmount=str(o),doneBy=usersearch)
-    # type(t1) = typeforEI
-# for i in onto.Transaction.instances():
-#     print(i.type)
 
-# for i in onto.Transaction.instances():
-#     print(i.ofType)
 
 onto.save(file = "categorieswithIndividuals.owl")
 
@@ -134,16 +129,13 @@ onto.save(file = "categorieswithIndividuals.owl")
 g1 = Graph()
 g1.parse("categorieswithIndividuals.owl")
 
-# for s,p,o in g1:
-#     print(s,p,o)
-
 qres = g1.query(
     '''
     PREFIX ie: <http://www.semanticweb.org/admin/ontologies/2020/10/category#>
     PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     PREFIX owl: <http://www.w3.org/2002/07/owl#>
-    SELECT ?p ?a ?name ?logType ?log
+    SELECT ?p ?a ?name ?logType ?log ?superClass
         WHERE {
             ?p rdf:type ie:User.
             ?p ie:hasName ?name.
@@ -151,20 +143,12 @@ qres = g1.query(
             ?t ie:ofType ?log.
             ?t rdf:type ?logType.
             ?t ie:ofAmount ?a.
+            ?log rdfs:subClassOf ?parentClass.
+            ?parentClass rdfs:subClassOf ?superClass.
             }''')
 
-for r in qres:
-    print(r[2],"spent",r[1],"on",r[4])
 
-# qres = g1.query(
-#     '''
-#     PREFIX ie: <http://www.semanticweb.org/admin/ontologies/2020/10/category#>
-#     PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-#     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-#     PREFIX owl: <http://www.w3.org/2002/07/owl#>
-#     SELECT ?t ?x
-#         WHERE {
-#             ?t rdf:type ie:Transaction.
-#             ?t rdf:type ?x.
-#
-#             }''')
+for r in qres:
+    print(r[2],"spent",r[1],"on",r[4],"as", r[5])
+    print(type(r[5]))
+    break
