@@ -7,10 +7,6 @@ expenseData_DF = pd.DataFrame(expenseData)
 persons = ['Tom', 'Harry', 'Chris', 'Dave']
 spent = ['spent', 'paid', 'gave', 'exhausted']
 received = ['received', 'got', 'gained', 'earned']
-
-# He received $300 as a bonus.
-# He spent $300 on rent
-
 inputFile = open("input.txt","w")
 
 for index, row in expenseData_DF.iterrows():
@@ -31,7 +27,7 @@ for index, row in expenseData_DF.iterrows():
         else:
             sentence += " for "
         sentence += category
-        print(sentence)
+
     else:
         types = random.choice(received)
         sentence += name
@@ -41,7 +37,9 @@ for index, row in expenseData_DF.iterrows():
         sentence += str(amount)
         sentence += " as "
         sentence += category
-        print(sentence)
 
     n = inputFile.write(sentence)
     n = inputFile.write("\n")
+
+print("\n****** Preprocessing Complete **********")
+print("\n****** Sentences stored in input.txt **********\n")

@@ -1,7 +1,5 @@
 from owlready2 import get_ontology
 from rdflib import Graph, Literal, RDF, URIRef
-# from rdflib.namespace import FOAF , XSD
-
 import spacy
 
 '''Extracting sub, pred and obj from unstructured data'''
@@ -38,11 +36,8 @@ while i < len(nouns) and j < len(values) and k < len(pronoun):
     j += 1
     k += 1
 
-# print(spo)
-
-# onto = get_ontology("https://raw.githubusercontent.com/san1197/SER531-Project---Group-19/main/categories.owl").load()
-onto = get_ontology("file://D:/Uni/FALL 20/SER 531/SER531-Project---Group-19/categories.owl").load()
-# namespace = onto.get_namespace("https://raw.githubusercontent.com/san1197/SER531-Project---Group-19/main/categories.owl")
+onto = get_ontology("https://raw.githubusercontent.com/san1197/SER531-Project---Group-19/main/categories.owl").load()
+namespace = onto.get_namespace("https://raw.githubusercontent.com/san1197/SER531-Project---Group-19/main/categories.owl")
 IncType = onto.search(iri = "*income")
 ExpType = onto.search(iri = "*expense")
 
@@ -56,13 +51,15 @@ for sub, pred, obj in spo:
     obj_url = Literal(obj)
     g.add((sub_url, pred_url, obj_url))
 
+f = open("triples.txt", "w")
+for s,p,o in g:
+    string = str(s) + "," + str(p) + "," +str(o)
+    f.write(string)
+    f.write("\n")
+f.close()
 
-# f = open("triples.txt", "w")
-# for s,p,o in g:
-#     string = str(s) + "," + str(p) + "," +str(o)
-#     f.write(string)
-#     f.write("\n")
-# f.close()
+print("\n****** Triples Generated **********")
+print("\n****** Stored in triples.txt **********\n")
 
 # To derive insights using OWL
 totalIncome = 0
@@ -97,8 +94,6 @@ for s,p,o in g:
     ss += str(p)
 
     typeforEI = onto.search(iri = ss)
-    # typeforEI = str(typeforEI[0]).split('.')
-    # ttype = typeforEI[1]
     ttag = "T"
     ttag += str(t)
     t += 1
@@ -203,19 +198,10 @@ for i in range(len(users)):
             totalIncome += float(r[1])
             maxIncome = max(maxIncome,float(r[1]))
             maxIncomeOn = incomeType[1]
-    # print("User",username)
-    # print("Total Income",totalIncome)
-    # print("Maximum Income",maxIncome,"from",maxIncomeOn)
-    # print("\n")
-
     userlist.append(str(username))
     totalIncomeList.append(totalIncome)
     maxIncomeList.append(maxIncome)
     maxIncomeOnList.append(maxIncomeOn)
-
-# print(userlist,totalIncomeList,maxIncomeList,maxIncomeOnList)
-
-
 
 totalExpenseList = []
 maxExpenseList = []
@@ -258,53 +244,46 @@ for i in range(len(users)):
     maxExpenseList.append(maxIncome)
     maxExpenseOnList.append(maxIncomeOn)
 
-print("Choose from the below")
-print("1.Total Incomes")
-print("2.Total Expenses")
-print("3.Maximum Income")
-print("4.Maximum Expense")
-inp = input()
 
 import matplotlib.pyplot as plt
 plt.style.use('ggplot')
 
-if(int(inp) == 1):
-    x = userlist
-    energy = totalIncomeList
+x = userlist
+energy = totalIncomeList
+x_pos = [i for i, _ in enumerate(x)]
+plt.bar(x_pos, energy, color='green')
+plt.xlabel("Income")
+plt.ylabel("Dollars($)")
+plt.title("Total Income Graph")
+plt.xticks(x_pos, x)
+plt.show()
 
-    x_pos = [i for i, _ in enumerate(x)]
+x = userlist
+energy = totalExpenseList
+x_pos = [i for i, _ in enumerate(x)]
+plt.bar(x_pos, energy, color='green')
+plt.xlabel("Expense")
+plt.ylabel("Dollars($)")
+plt.title("Total Expense Graph")
+plt.xticks(x_pos, x)
+plt.show()
 
-    plt.bar(x_pos, energy, color='green')
-    plt.xlabel("Income")
-    plt.ylabel("Dollars($)")
-    plt.title("Total Income Graph")
-    plt.xticks(x_pos, x)
-    plt.show()
+x = userlist
+energy = maxIncomeList
+x_pos = [i for i, _ in enumerate(x)]
+plt.bar(x_pos, energy, color='green')
+plt.xlabel("Expense")
+plt.ylabel("Dollars($)")
+plt.title("Maximum Income Distribution between Users")
+plt.xticks(x_pos, x)
+plt.show()
 
-elif(int(inp) == 2):
-    x = userlist
-    energy = totalExpenseList
-
-    x_pos = [i for i, _ in enumerate(x)]
-
-    plt.bar(x_pos, energy, color='green')
-    plt.xlabel("Expense")
-    plt.ylabel("Dollars($)")
-    plt.title("Total Expense Graph")
-
-    plt.xticks(x_pos, x)
-    plt.show()
-
-elif(int(inp) == 3):
-        cars = userlist
-        data = maxIncomeList
-        fig = plt.figure(figsize =(10, 7))
-        plt.pie(data, labels = cars)
-        plt.show()
-
-elif(int(inp) == 4):
-        cars = userlist
-        data = maxExpenseList
-        fig = plt.figure(figsize =(10, 7))
-        plt.pie(data, labels = cars)
-        plt.show()
+x = userlist
+energy = maxExpenseList
+x_pos = [i for i, _ in enumerate(x)]
+plt.bar(x_pos, energy, color='green')
+plt.xlabel("Expense")
+plt.ylabel("Dollars($)")
+plt.title("Maximum Expense Distribution between Users")
+plt.xticks(x_pos, x)
+plt.show()
