@@ -21,7 +21,7 @@
 9/28/2018,Friday,-84.77,groceries,,Chase Debit Card
 10/1/2018,Monday,-1380,bills,Rent,Chase Debit Card
 10/1/2018,Monday,-9.1,pharmacy,,Chase Debit Card
-10/1/2018,Monday,-7.72,food,,Chase Debit Card
+10/1/2018,Monday,-7.72,takeout,,Chase Debit Card
 10/1/2018,Monday,113.54,transfer,,Chase Debit Card
 10/2/2018,Tuesday,-55.1,merchandise,Clothes,Chase Debit Card
 10/2/2018,Tuesday,-36.38,merchandise,Clothes,Chase Debit Card
@@ -32,7 +32,7 @@
 10/5/2018,Friday,-14.99,merchandise,Amazon,Chase Debit Card
 10/5/2018,Friday,-7.6,uber,,Chase Debit Card
 10/6/2018,Saturday,-9.8,merchandise,Best Buy,Discover Credit Card
-10/9/2018,Tuesday,-19.33,food,,Chase Debit Card
+10/9/2018,Tuesday,-19.33,takeout,,Chase Debit Card
 10/9/2018,Tuesday,15,transfer,,Chase Debit Card
 10/9/2018,Tuesday,-7.6,uber,,Chase Debit Card
 10/9/2018,Tuesday,151.48,deposit,,Chase Debit Card
@@ -42,7 +42,7 @@
 10/10/2018,Wednesday,-9.99,merchandise,Amazon,Chase Debit Card
 10/10/2018,Wednesday,-1.62,merchandise,Amazon,Chase Debit Card
 10/11/2018,Thursday,-89.43,groceries,,Chase Debit Card
-10/12/2018,Friday,-15.1,food,,Chase Debit Card
+10/12/2018,Friday,-15.1,takeout,,Chase Debit Card
 10/12/2018,Friday,-7.48,merchandise,Amazon,Chase Debit Card
 10/12/2018,Friday,-7.4,merchandise,Amazon,Chase Debit Card
 10/12/2018,Friday,27.95,deposit,,Chase Debit Card
@@ -67,7 +67,7 @@
 10/22/2018,Monday,-16.99,pharmacy,,Chase Debit Card
 10/22/2018,Monday,-13.25,merchandise,Amazon,Chase Debit Card
 10/22/2018,Monday,-11.42,merchandise,Clothes,Chase Debit Card
-10/22/2018,Monday,-10.8,food,,Chase Debit Card
+10/22/2018,Monday,-10.8,takeout,,Chase Debit Card
 10/22/2018,Monday,-10.39,merchandise,Clothes,Chase Debit Card
 10/23/2018,Tuesday,-242.25,merchandise,Clothes,Chase Debit Card
 10/23/2018,Tuesday,-43.84,merchandise,Clothes,Chase Debit Card
@@ -76,20 +76,20 @@
 10/25/2018,Thursday,-7.69,pharmacy,,Chase Debit Card
 10/25/2018,Thursday,161.66,deposit,,Chase Debit Card
 10/26/2018,Friday,-12.99,merchandise,Best Buy,Discover Credit Card
-10/29/2018,Monday,-25.11,food,,Chase Debit Card
+10/29/2018,Monday,-25.11,takeout,,Chase Debit Card
 10/29/2018,Monday,-19.76,merchandise,Amazon,Chase Debit Card
 10/29/2018,Monday,-19.44,uber,,Chase Debit Card
 10/29/2018,Monday,-16.74,merchandise,Amazon,Chase Debit Card
-10/29/2018,Monday,-8.64,food,,Chase Debit Card
+10/29/2018,Monday,-8.64,takeout,,Chase Debit Card
 10/29/2018,Monday,-3.09,pharmacy,,Chase Debit Card
 10/30/2018,Tuesday,-176.47,groceries,,Chase Debit Card
 10/30/2018,Tuesday,7.01,groceries,,Chase Debit Card
 10/31/2018,Wednesday,-129.51,groceries,,Chase Debit Card
 10/31/2018,Wednesday,-40.07,groceries,,Chase Debit Card
-10/31/2018,Wednesday,-18.25,food,,Chase Debit Card
-10/31/2018,Wednesday,-8.91,food,,Chase Debit Card
+10/31/2018,Wednesday,-18.25,takeout,,Chase Debit Card
+10/31/2018,Wednesday,-8.91,takeout,,Chase Debit Card
 11/1/2018,Thursday,-27.48,merchandise,Amazon,Chase Debit Card
-11/1/2018,Thursday,-3.34,food,Coffee,Chase Debit Card
+11/1/2018,Thursday,-3.34,takeout,Coffee,Chase Debit Card
 11/1/2018,Thursday,-1,groceries,,Chase Debit Card
 11/1/2018,Thursday,137.62,deposit,,Chase Debit Card
 11/2/2018,Friday,-1360,bills,Rent,Chase Debit Card
@@ -101,10 +101,10 @@
 11/7/2018,Wednesday,-62.39,merchandise,Amazon,Chase Debit Card
 11/8/2018,Thursday,-141.42,groceries,,Chase Debit Card
 11/8/2018,Thursday,-32.2,groceries,,Chase Debit Card
-11/8/2018,Thursday,-6.48,food,,Chase Debit Card
+11/8/2018,Thursday,-6.48,takeout,,Chase Debit Card
 11/8/2018,Thursday,197.71,deposit,,Chase Debit Card
 11/14/2018,Wednesday,-51.79,groceries,,Chase Debit Card
-11/16/2018,Friday,-2.15,food,Coffee,Chase Debit Card
+11/16/2018,Friday,-2.15,takeout,Coffee,Chase Debit Card
 11/16/2018,Friday,187.55,deposit,,Chase Debit Card
 11/19/2018,Monday,-15.99,merchandise,Amazon,Chase Debit Card
 11/21/2018,Wednesday,-47.84,groceries,,Chase Debit Card
@@ -130,18 +130,18 @@
 11/29/2018,Thursday,-500,tuition,,Chase Debit Card
 11/29/2018,Thursday,-110,merchandise,Best Buy,Discover Credit Card
 11/29/2018,Thursday,40,transfer,,Chase Debit Card
-11/29/2018,Thursday,-21.49,food,,Discover Credit Card
+11/29/2018,Thursday,-21.49,takeout,,Discover Credit Card
 11/29/2018,Thursday,-8.63,merchandise,Amazon,Discover Credit Card
 11/29/2018,Thursday,-5.93,merchandise,Amazon,Discover Credit Card
 11/30/2018,Friday,-16.19,merchandise,Best Buy,Discover Credit Card
-11/30/2018,Friday,-8.37,food,,Chase Debit Card
+11/30/2018,Friday,-8.37,takeout,,Chase Debit Card
 11/30/2018,Friday,2.25,merchandise,Amazon,Chase Debit Card
 12/2/2018,Sunday,-33.79,merchandise,Amazon,Discover Credit Card
 12/2/2018,Sunday,-5.99,merchandise,Amazon,Discover Credit Card
 12/2/2018,Sunday,-1.55,merchandise,Amazon,Discover Credit Card
 12/3/2018,Monday,-1360,bills,Rent,Chase Debit Card
 12/3/2018,Monday,-35.98,merchandise,Amazon,Discover Credit Card
-12/3/2018,Monday,-0.99,entertainment,,Chase Debit Card
+12/3/2018,Monday,-0.99,shopping,,Chase Debit Card
 12/4/2018,Tuesday,-27.25,bills,Rent,Chase Debit Card
 12/4/2018,Tuesday,-22.99,merchandise,Amazon,Discover Credit Card
 12/4/2018,Tuesday,-16.08,merchandise,Amazon,Discover Credit Card
@@ -161,11 +161,11 @@
 12/13/2018,Thursday,-9.95,merchandise,Amazon,Discover Credit Card
 12/13/2018,Thursday,-4.11,merchandise,Amazon,Discover Credit Card
 12/14/2018,Friday,-35.92,groceries,,Chase Debit Card
-12/14/2018,Friday,-0.99,entertainment,,Discover Credit Card
-12/14/2018,Friday,-0.99,entertainment,,Chase Debit Card
+12/14/2018,Friday,-0.99,shopping,,Discover Credit Card
+12/14/2018,Friday,-0.99,shopping,,Chase Debit Card
 12/15/2018,Saturday,-19.2,merchandise,Amazon,Discover Credit Card
 12/16/2018,Sunday,-5.4,merchandise,Best Buy,Discover Credit Card
-12/16/2018,Sunday,-4.85,food,,Discover Credit Card
+12/16/2018,Sunday,-4.85,takeout,,Discover Credit Card
 12/18/2018,Tuesday,-151,travel,,Chase Debit Card
 12/18/2018,Tuesday,-15.12,merchandise,Amazon,Discover Credit Card
 12/19/2018,Wednesday,-2760,bills,Rent,Chase Debit Card
@@ -175,13 +175,13 @@
 12/19/2018,Wednesday,218.85,deposit,,Chase Debit Card
 12/20/2018,Thursday,-14.68,merchandise,Amazon,Discover Credit Card
 12/21/2018,Friday,-6.75,travel,,Discover Credit Card
-12/22/2018,Saturday,-27,food,,Discover Credit Card
+12/22/2018,Saturday,-27,takeout,,Discover Credit Card
 12/22/2018,Saturday,-21.95,travel,,Discover Credit Card
 12/22/2018,Saturday,-10.87,travel,,Discover Credit Card
 12/22/2018,Saturday,-8.17,merchandise,Clothes,Discover Credit Card
 12/23/2018,Sunday,-56.56,merchandise,Clothes,Discover Credit Card
 12/23/2018,Sunday,-48.2,travel,,Discover Credit Card
-12/23/2018,Sunday,-40.5,food,,Discover Credit Card
+12/23/2018,Sunday,-40.5,takeout,,Discover Credit Card
 12/23/2018,Sunday,-7,travel,,Discover Credit Card
 12/23/2018,Sunday,-5.3,merchandise,Amazon,Discover Credit Card
 12/23/2018,Sunday,-3.56,merchandise,Clothes,Discover Credit Card
@@ -193,10 +193,10 @@
 12/26/2018,Wednesday,40,transfer,,Chase Debit Card
 12/26/2018,Wednesday,209.48,deposit,,Chase Debit Card
 12/28/2018,Friday,-28,groceries,,Discover Credit Card
-12/28/2018,Friday,-8.91,food,,Discover Credit Card
+12/28/2018,Friday,-8.91,takeout,,Discover Credit Card
 12/29/2018,Saturday,-48.88,merchandise,Clothes,Discover Credit Card
-12/29/2018,Saturday,-3.24,food,,Discover Credit Card
-12/29/2018,Saturday,-3.19,food,Starbucks,Discover Credit Card
+12/29/2018,Saturday,-3.24,takeout,,Discover Credit Card
+12/29/2018,Saturday,-3.19,takeout,Starbucks,Discover Credit Card
 12/29/2018,Saturday,34.68,bills,Credit Card,Discover Credit Card
 12/30/2018,Sunday,-11.56,merchandise,Amazon,Discover Credit Card
 12/31/2018,Monday,-106.31,groceries,,Discover Credit Card
@@ -213,11 +213,11 @@
 1/3/2019,Thursday,-34.7,groceries,,Chase Debit Card
 1/3/2019,Thursday,-31.11,merchandise,Amazon,Discover Credit Card
 1/3/2019,Thursday,-9.99,merchandise,Amazon,Discover Credit Card
-1/3/2019,Thursday,-4.2,food,,Discover Credit Card
-1/3/2019,Thursday,-3.78,food,,Discover Credit Card
-1/5/2019,Saturday,-17.17,food,,Discover Credit Card
-1/5/2019,Saturday,-10,food,,Discover Credit Card
-1/5/2019,Saturday,-8.59,food,,Discover Credit Card
+1/3/2019,Thursday,-4.2,takeout,,Discover Credit Card
+1/3/2019,Thursday,-3.78,takeout,,Discover Credit Card
+1/5/2019,Saturday,-17.17,takeout,,Discover Credit Card
+1/5/2019,Saturday,-10,takeout,,Discover Credit Card
+1/5/2019,Saturday,-8.59,takeout,,Discover Credit Card
 1/7/2019,Monday,-460.8,travel,,Chase Debit Card
 1/7/2019,Monday,-10.79,merchandise,Amazon,Discover Credit Card
 1/8/2019,Tuesday,-117.27,merchandise,Makeup/Skin Care,Discover Credit Card
@@ -229,10 +229,10 @@
 1/8/2019,Tuesday,-13.51,merchandise,Clothes,Discover Credit Card
 1/8/2019,Tuesday,-9.99,tuition,,Discover Credit Card
 1/8/2019,Tuesday,-7.75,merchandise,Clothes,Discover Credit Card
-1/8/2019,Tuesday,-3.51,food,Starbucks,Discover Credit Card
-1/9/2019,Wednesday,-17,food,,Discover Credit Card
+1/8/2019,Tuesday,-3.51,takeout,Starbucks,Discover Credit Card
+1/9/2019,Wednesday,-17,takeout,,Discover Credit Card
 1/9/2019,Wednesday,-9.66,uber,,Chase Debit Card
-1/9/2019,Wednesday,-2.16,food,,Discover Credit Card
+1/9/2019,Wednesday,-2.16,takeout,,Discover Credit Card
 1/9/2019,Wednesday,50.96,deposit,,Chase Debit Card
 1/10/2019,Thursday,-9.14,uber,,Chase Debit Card
 1/11/2019,Friday,-44.4,bills,Phone,Chase Debit Card
@@ -242,75 +242,75 @@
 1/14/2019,Monday,-372.59,merchandise,Best Buy,Discover Credit Card
 1/14/2019,Monday,101,deposit,,Chase Debit Card
 1/15/2019,Tuesday,-34.99,groceries,,Chase Debit Card
-1/15/2019,Tuesday,-21.01,food,,Discover Credit Card
+1/15/2019,Tuesday,-21.01,takeout,,Discover Credit Card
 1/15/2019,Tuesday,-7.99,merchandise,Amazon,Discover Credit Card
 1/16/2019,Wednesday,-20.6,merchandise,Amazon,Discover Credit Card
 1/17/2019,Thursday,-1.64,doctor,,Discover Credit Card
-1/18/2019,Friday,-18.07,food,,Discover Credit Card
+1/18/2019,Friday,-18.07,takeout,,Discover Credit Card
 1/18/2019,Friday,-7.6,uber,,Chase Debit Card
 1/20/2019,Sunday,-102.59,merchandise,Best Buy,Discover Credit Card
-1/20/2019,Sunday,-10.57,food,,Discover Credit Card
-1/20/2019,Sunday,-3.01,food,,Discover Credit Card
+1/20/2019,Sunday,-10.57,takeout,,Discover Credit Card
+1/20/2019,Sunday,-3.01,takeout,,Discover Credit Card
 1/22/2019,Tuesday,-72.08,merchandise,Clothes,Chase Debit Card
 1/22/2019,Tuesday,-60.57,groceries,,Chase Debit Card
-1/22/2019,Tuesday,-10.99,entertainment,,Chase Debit Card
+1/22/2019,Tuesday,-10.99,shopping,,Chase Debit Card
 1/23/2019,Wednesday,-14.42,merchandise,Amazon,Discover Credit Card
 1/23/2019,Wednesday,27.86,deposit,,Chase Debit Card
 1/23/2019,Wednesday,83.58,deposit,,M&T Debit Card
 1/24/2019,Thursday,-10.23,uber,,Chase Debit Card
 1/24/2019,Thursday,9.95,merchandise,Amazon,Chase Debit Card
-1/25/2019,Friday,-2.43,food,,Discover Credit Card
+1/25/2019,Friday,-2.43,takeout,,Discover Credit Card
 1/25/2019,Friday,11.74,merchandise,Amazon,Discover Credit Card
 1/28/2019,Monday,-53.55,groceries,,Chase Debit Card
 1/28/2019,Monday,-7.88,merchandise,Amazon,Discover Credit Card
 1/28/2019,Monday,-7.6,uber,,Chase Debit Card
-1/29/2019,Tuesday,-10.68,food,,Chase Debit Card
-1/29/2019,Tuesday,-10.25,food,,M&T Debit Card
+1/29/2019,Tuesday,-10.68,takeout,,Chase Debit Card
+1/29/2019,Tuesday,-10.25,takeout,,M&T Debit Card
 1/29/2019,Tuesday,14.77,bills,Credit Card,Discover Credit Card
 1/30/2019,Wednesday,42.1,deposit,,Chase Debit Card
 1/30/2019,Wednesday,126.3,deposit,,M&T Debit Card
-2/1/2019,Friday,-25,food,Super Card,Chase Debit Card
+2/1/2019,Friday,-25,takeout,Super Card,Chase Debit Card
 2/4/2019,Monday,-144.04,groceries,,Chase Debit Card
 2/4/2019,Monday,-17.98,groceries,,Discover Credit Card
 2/5/2019,Tuesday,-60.66,groceries,,Chase Debit Card
-2/6/2019,Wednesday,-17.01,food,,Chase Debit Card
+2/6/2019,Wednesday,-17.01,takeout,,Chase Debit Card
 2/6/2019,Wednesday,-7.35,groceries,,Chase Debit Card
 2/6/2019,Wednesday,46.85,deposit,,Chase Debit Card
 2/6/2019,Wednesday,140.56,deposit,,M&T Debit Card
 2/9/2019,Saturday,-23.17,merchandise,Makeup/Skin Care,Discover Credit Card
-2/9/2019,Saturday,-17,entertainment,,Discover Credit Card
+2/9/2019,Saturday,-17,shopping,,Discover Credit Card
 2/9/2019,Saturday,-3.23,merchandise,Best Buy,Discover Credit Card
 2/11/2019,Monday,-44.4,bills,Phone,Chase Debit Card
 2/11/2019,Monday,-43.98,merchandise,Amazon,Discover Credit Card
 2/11/2019,Monday,-10.28,uber,,Chase Debit Card
 2/11/2019,Monday,-10.08,uber,,Chase Debit Card
-2/11/2019,Monday,-4.99,entertainment,,Discover Credit Card
+2/11/2019,Monday,-4.99,shopping,,Discover Credit Card
 2/12/2019,Tuesday,-37.33,groceries,,Chase Debit Card
-2/13/2019,Wednesday,-25,food,Super Card,Chase Debit Card
+2/13/2019,Wednesday,-25,takeout,Super Card,Chase Debit Card
 2/13/2019,Wednesday,55.43,deposit,,Chase Debit Card
 2/13/2019,Wednesday,166.29,deposit,,M&T Debit Card
 2/14/2019,Thursday,100,deposit,,M&T Debit Card
-2/15/2019,Friday,-8.1,food,,Chase Debit Card
-2/15/2019,Friday,-6,entertainment,,M&T Debit Card
+2/15/2019,Friday,-8.1,takeout,,Chase Debit Card
+2/15/2019,Friday,-6,shopping,,M&T Debit Card
 2/17/2019,Sunday,-34.19,merchandise,Amazon,Discover Credit Card
 2/17/2019,Sunday,-12.85,merchandise,Amazon,Discover Credit Card
 2/19/2019,Tuesday,-49.09,groceries,,Chase Debit Card
 2/19/2019,Tuesday,-45.61,groceries,,Chase Debit Card
-2/19/2019,Tuesday,-30,food,,Chase Debit Card
+2/19/2019,Tuesday,-30,takeout,,Chase Debit Card
 2/19/2019,Tuesday,5050,transfer,,Chase Debit Card
 2/20/2019,Wednesday,39.06,deposit,,Chase Debit Card
 2/20/2019,Wednesday,117.18,deposit,,M&T Debit Card
-2/22/2019,Friday,-31.04,food,,Chase Debit Card
-2/22/2019,Friday,-10.99,entertainment,,Chase Debit Card
+2/22/2019,Friday,-31.04,takeout,,Chase Debit Card
+2/22/2019,Friday,-10.99,shopping,,Chase Debit Card
 2/26/2019,Tuesday,-35.11,groceries,,Chase Debit Card
-2/27/2019,Wednesday,-10.52,food,,Chase Debit Card
+2/27/2019,Wednesday,-10.52,takeout,,Chase Debit Card
 2/27/2019,Wednesday,10.44,deposit,,Chase Debit Card
 2/27/2019,Wednesday,31.32,deposit,,M&T Debit Card
-2/28/2019,Thursday,-25,food,Super Card,Chase Debit Card
+2/28/2019,Thursday,-25,takeout,Super Card,Chase Debit Card
 2/28/2019,Thursday,1.65,bills,Credit Card,Discover Credit Card
 3/1/2019,Friday,-13,merchandise,Amazon,Discover Credit Card
-3/1/2019,Friday,-8.63,food,,M&T Debit Card
-3/1/2019,Friday,-6.37,food,Coffee,Discover Credit Card
+3/1/2019,Friday,-8.63,takeout,,M&T Debit Card
+3/1/2019,Friday,-6.37,takeout,Coffee,Discover Credit Card
 3/1/2019,Friday,29.34,merchandise,Amazon,Chase Debit Card
 3/4/2019,Monday,-2730,bills,Rent,Chase Debit Card
 3/4/2019,Monday,-99,groceries,,Chase Debit Card
@@ -320,139 +320,139 @@
 3/4/2019,Monday,20950,tuition,,Chase Debit Card
 3/6/2019,Wednesday,10.73,deposit,,Chase Debit Card
 3/6/2019,Wednesday,32.19,deposit,,M&T Debit Card
-3/7/2019,Thursday,-25,food,Super Card,Chase Debit Card
+3/7/2019,Thursday,-25,takeout,Super Card,Chase Debit Card
 3/7/2019,Thursday,-7.14,uber,,Chase Debit Card
 3/7/2019,Thursday,10,merchandise,Amazon,Chase Debit Card
 3/8/2019,Friday,-51.76,merchandise,Makeup/Skin Care,Discover Credit Card
-3/8/2019,Friday,-45,food,,Chase Debit Card
+3/8/2019,Friday,-45,takeout,,Chase Debit Card
 3/8/2019,Friday,-6.48,merchandise,Clothes,Discover Credit Card
 3/9/2019,Saturday,-19.99,merchandise,Amazon,Discover Credit Card
 3/9/2019,Saturday,-5.3,merchandise,Amazon,Discover Credit Card
 3/11/2019,Monday,-19340,tuition,,Chase Debit Card
-3/11/2019,Monday,-25,food,Starbucks,Chase Debit Card
-3/11/2019,Monday,-24.7,food,,M&T Debit Card
+3/11/2019,Monday,-25,takeout,Starbucks,Chase Debit Card
+3/11/2019,Monday,-24.7,takeout,,M&T Debit Card
 3/11/2019,Monday,-22.48,groceries,,Chase Debit Card
 3/11/2019,Monday,-17.98,groceries,,Chase Debit Card
 3/11/2019,Monday,-10.41,uber,,Chase Debit Card
 3/11/2019,Monday,-8.28,uber,,Chase Debit Card
 3/11/2019,Monday,-6.93,merchandise,Amazon,Discover Credit Card
-3/11/2019,Monday,-4.99,entertainment,,Discover Credit Card
+3/11/2019,Monday,-4.99,shopping,,Discover Credit Card
 3/11/2019,Monday,5.18,merchandise,Amazon,Chase Debit Card
 3/12/2019,Tuesday,-44.4,bills,Phone,Chase Debit Card
-3/13/2019,Wednesday,-9.5,food,Coffee,M&T Debit Card
+3/13/2019,Wednesday,-9.5,takeout,Coffee,M&T Debit Card
 3/13/2019,Wednesday,10.44,deposit,,Chase Debit Card
 3/13/2019,Wednesday,31.32,deposit,,M&T Debit Card
 3/14/2019,Thursday,-47.59,groceries,,Chase Debit Card
 3/14/2019,Thursday,-10.8,merchandise,Makeup/Skin Care,M&T Debit Card
-3/14/2019,Thursday,-10.75,food,,M&T Debit Card
-3/16/2019,Saturday,-15.1,food,,Discover Credit Card
+3/14/2019,Thursday,-10.75,takeout,,M&T Debit Card
+3/16/2019,Saturday,-15.1,takeout,,Discover Credit Card
 3/17/2019,Sunday,7.99,merchandise,Amazon,Discover Credit Card
-3/18/2019,Monday,-64.8,entertainment,,Chase Debit Card
+3/18/2019,Monday,-64.8,shopping,,Chase Debit Card
 3/18/2019,Monday,-46.53,groceries,,Chase Debit Card
 3/18/2019,Monday,-18.72,groceries,,Chase Debit Card
 3/18/2019,Monday,-6.41,uber,,Chase Debit Card
 3/18/2019,Monday,0.76,groceries,,Chase Debit Card
-3/18/2019,Monday,6.3,entertainment,,Chase Debit Card
-3/18/2019,Monday,21.6,entertainment,,Chase Debit Card
+3/18/2019,Monday,6.3,shopping,,Chase Debit Card
+3/18/2019,Monday,21.6,shopping,,Chase Debit Card
 3/19/2019,Tuesday,-39.65,groceries,,Chase Debit Card
-3/19/2019,Tuesday,-36.67,food,,Chase Debit Card
+3/19/2019,Tuesday,-36.67,takeout,,Chase Debit Card
 3/19/2019,Tuesday,-8.23,uber,,Chase Debit Card
 3/20/2019,Wednesday,-5.99,merchandise,Amazon,Discover Credit Card
-3/22/2019,Friday,-25,food,Super Card,Chase Debit Card
+3/22/2019,Friday,-25,takeout,Super Card,Chase Debit Card
 3/22/2019,Friday,-15.6,merchandise,Amazon,Discover Credit Card
-3/22/2019,Friday,-12.99,entertainment,,Chase Debit Card
+3/22/2019,Friday,-12.99,shopping,,Chase Debit Card
 3/22/2019,Friday,-10.8,merchandise,Sub Box,M&T Debit Card
 3/22/2019,Friday,-5.84,merchandise,Makeup/Skin Care,M&T Debit Card
 3/22/2019,Friday,-5.44,pharmacy,,Discover Credit Card
-3/25/2019,Monday,-25,food,Super Card,Chase Debit Card
-3/25/2019,Monday,-19.43,food,,Chase Debit Card
-3/25/2019,Monday,-12.41,food,,Discover Credit Card
+3/25/2019,Monday,-25,takeout,Super Card,Chase Debit Card
+3/25/2019,Monday,-19.43,takeout,,Chase Debit Card
+3/25/2019,Monday,-12.41,takeout,,Discover Credit Card
 3/25/2019,Monday,-8.6,uber,,Chase Debit Card
-3/25/2019,Monday,-8.4,food,,Discover Credit Card
+3/25/2019,Monday,-8.4,takeout,,Discover Credit Card
 3/25/2019,Monday,-6.78,uber,,Chase Debit Card
 3/25/2019,Monday,-5.32,uber,,Chase Debit Card
 3/26/2019,Tuesday,-7.56,merchandise,Sub Box,Chase Debit Card
 3/27/2019,Wednesday,11.02,deposit,,Chase Debit Card
 3/27/2019,Wednesday,33.06,deposit,,M&T Debit Card
-3/29/2019,Friday,-25,food,Super Card,Chase Debit Card
-3/29/2019,Friday,-16,food,,Discover Credit Card
-3/29/2019,Friday,-4.32,food,Coffee,Discover Credit Card
-3/29/2019,Friday,-2.37,food,,Discover Credit Card
+3/29/2019,Friday,-25,takeout,Super Card,Chase Debit Card
+3/29/2019,Friday,-16,takeout,,Discover Credit Card
+3/29/2019,Friday,-4.32,takeout,Coffee,Discover Credit Card
+3/29/2019,Friday,-2.37,takeout,,Discover Credit Card
 4/1/2019,Monday,-90.7,groceries,,Chase Debit Card
 4/1/2019,Monday,-48.97,groceries,,Chase Debit Card
 4/1/2019,Monday,-7.24,uber,,Chase Debit Card
 4/1/2019,Monday,-5,merchandise,Sub Box,M&T Debit Card
 4/2/2019,Tuesday,-5.57,uber,,M&T Debit Card
-4/2/2019,Tuesday,-4.99,food,,M&T Debit Card
+4/2/2019,Tuesday,-4.99,takeout,,M&T Debit Card
 4/3/2019,Wednesday,-7.34,uber,,M&T Debit Card
 4/3/2019,Wednesday,11.02,deposit,,Chase Debit Card
 4/3/2019,Wednesday,33.06,deposit,,M&T Debit Card
 4/4/2019,Thursday,-15,merchandise,Makeup/Skin Care,M&T Debit Card
 4/4/2019,Thursday,-10.8,merchandise,Sub Box,M&T Debit Card
 4/4/2019,Thursday,-10.8,merchandise,Sub Box,M&T Debit Card
-4/4/2019,Thursday,-7.23,food,,Discover Credit Card
+4/4/2019,Thursday,-7.23,takeout,,Discover Credit Card
 4/4/2019,Thursday,-0.56,doctor,,M&T Debit Card
-4/5/2019,Friday,-52,entertainment,,Chase Debit Card
-4/5/2019,Friday,-25,food,Super Card,Chase Debit Card
+4/5/2019,Friday,-52,shopping,,Chase Debit Card
+4/5/2019,Friday,-25,takeout,Super Card,Chase Debit Card
 4/5/2019,Friday,2.74,bills,Credit Card,Discover Credit Card
-4/6/2019,Saturday,-22.19,food,,Discover Credit Card
-4/7/2019,Sunday,-17.26,food,,Discover Credit Card
-4/7/2019,Sunday,-7.65,food,Coffee,Discover Credit Card
+4/6/2019,Saturday,-22.19,takeout,,Discover Credit Card
+4/7/2019,Sunday,-17.26,takeout,,Discover Credit Card
+4/7/2019,Sunday,-7.65,takeout,Coffee,Discover Credit Card
 4/7/2019,Sunday,-7.37,groceries,,Discover Credit Card
 4/8/2019,Monday,-13.67,merchandise,Amazon,Discover Credit Card
 4/8/2019,Monday,-10.8,merchandise,Makeup/Skin Care,M&T Debit Card
-4/8/2019,Monday,-8.25,entertainment,,Chase Debit Card
+4/8/2019,Monday,-8.25,shopping,,Chase Debit Card
 4/8/2019,Monday,-7.11,uber,,Chase Debit Card
 4/8/2019,Monday,35.95,deposit,,Chase Debit Card
 4/9/2019,Tuesday,-6.07,uber,,Chase Debit Card
 4/10/2019,Wednesday,-56.66,groceries,,Chase Debit Card
 4/10/2019,Wednesday,-44.4,bills,Phone,Chase Debit Card
-4/10/2019,Wednesday,-25,food,Super Card,Chase Debit Card
-4/10/2019,Wednesday,-17,food,,Discover Credit Card
+4/10/2019,Wednesday,-25,takeout,Super Card,Chase Debit Card
+4/10/2019,Wednesday,-17,takeout,,Discover Credit Card
 4/10/2019,Wednesday,-5.28,doctor,,Chase Debit Card
-4/10/2019,Wednesday,-2.43,food,Coffee,Discover Credit Card
+4/10/2019,Wednesday,-2.43,takeout,Coffee,Discover Credit Card
 4/10/2019,Wednesday,3.95,merchandise,Amazon,M&T Debit Card
 4/10/2019,Wednesday,14.52,merchandise,Amazon,M&T Debit Card
-4/12/2019,Friday,-25,food,Super Card,Chase Debit Card
+4/12/2019,Friday,-25,takeout,Super Card,Chase Debit Card
 4/12/2019,Friday,-24.99,merchandise,Amazon,Discover Credit Card
 4/15/2019,Monday,-67.91,groceries,,Chase Debit Card
-4/15/2019,Monday,-25,food,Starbucks,Chase Debit Card
-4/15/2019,Monday,-25,food,Super Card,Chase Debit Card
-4/16/2019,Tuesday,-23.73,food,,Discover Credit Card
+4/15/2019,Monday,-25,takeout,Starbucks,Chase Debit Card
+4/15/2019,Monday,-25,takeout,Super Card,Chase Debit Card
+4/16/2019,Tuesday,-23.73,takeout,,Discover Credit Card
 4/16/2019,Tuesday,-7.56,merchandise,Sub Box,Chase Debit Card
-4/17/2019,Wednesday,-25,food,Super Card,Chase Debit Card
+4/17/2019,Wednesday,-25,takeout,Super Card,Chase Debit Card
 4/17/2019,Wednesday,-7.12,merchandise,Amazon,Discover Credit Card
-4/19/2019,Friday,-25.73,food,,Chase Debit Card
-4/19/2019,Friday,-13.14,food,,Discover Credit Card
+4/19/2019,Friday,-25.73,takeout,,Chase Debit Card
+4/19/2019,Friday,-13.14,takeout,,Discover Credit Card
 4/19/2019,Friday,-7.29,uber,,Discover Credit Card
 4/20/2019,Saturday,-7.29,uber,,Discover Credit Card
 4/21/2019,Sunday,-7.8,uber,,Discover Credit Card
 4/22/2019,Monday,-25.47,groceries,,Chase Debit Card
-4/22/2019,Monday,-12.99,entertainment,,Chase Debit Card
-4/22/2019,Monday,-3.72,entertainment,,Chase Debit Card
-4/23/2019,Tuesday,-25,food,Super Card,Chase Debit Card
-4/23/2019,Tuesday,-16.74,food,,Discover Credit Card
-4/24/2019,Wednesday,-19.7,food,,Discover Credit Card
+4/22/2019,Monday,-12.99,shopping,,Chase Debit Card
+4/22/2019,Monday,-3.72,shopping,,Chase Debit Card
+4/23/2019,Tuesday,-25,takeout,Super Card,Chase Debit Card
+4/23/2019,Tuesday,-16.74,takeout,,Discover Credit Card
+4/24/2019,Wednesday,-19.7,takeout,,Discover Credit Card
 4/26/2019,Friday,-48.47,groceries,,Chase Debit Card
 4/26/2019,Friday,-10,doctor,,Chase Debit Card
-4/28/2019,Sunday,-20.78,food,,Discover Credit Card
+4/28/2019,Sunday,-20.78,takeout,,Discover Credit Card
 4/28/2019,Sunday,-18.89,merchandise,Clothes,Discover Credit Card
 4/28/2019,Sunday,-7.29,uber,,Discover Credit Card
-4/28/2019,Sunday,-1.62,food,,Discover Credit Card
-4/29/2019,Monday,-9.71,entertainment,,Chase Debit Card
-4/29/2019,Monday,-3.1,food,Coffee,Chase Debit Card
-4/30/2019,Tuesday,-10.67,food,,Chase Debit Card
+4/28/2019,Sunday,-1.62,takeout,,Discover Credit Card
+4/29/2019,Monday,-9.71,shopping,,Chase Debit Card
+4/29/2019,Monday,-3.1,takeout,Coffee,Chase Debit Card
+4/30/2019,Tuesday,-10.67,takeout,,Chase Debit Card
 4/30/2019,Tuesday,-8.99,groceries,,Discover Credit Card
-4/30/2019,Tuesday,-3.66,food,Coffee,Discover Credit Card
+4/30/2019,Tuesday,-3.66,takeout,Coffee,Discover Credit Card
 4/30/2019,Tuesday,5.4,merchandise,Clothes,Discover Credit Card
-5/1/2019,Wednesday,-6.47,food,,Chase Debit Card
+5/1/2019,Wednesday,-6.47,takeout,,Chase Debit Card
 5/2/2019,Thursday,-15.1,groceries,,Chase Debit Card
 5/3/2019,Friday,-1360,bills,Rent,Chase Debit Card
 5/3/2019,Friday,-1.95,bills,Rent,Chase Debit Card
 5/6/2019,Monday,-45.36,groceries,,Chase Debit Card
 5/6/2019,Monday,-43.73,groceries,,Chase Debit Card
-5/6/2019,Monday,-25,food,Super Card,Chase Debit Card
-5/6/2019,Monday,-24.56,food,,Chase Debit Card
+5/6/2019,Monday,-25,takeout,Super Card,Chase Debit Card
+5/6/2019,Monday,-24.56,takeout,,Chase Debit Card
 5/6/2019,Monday,-10.8,merchandise,Sub Box,M&T Debit Card
 5/6/2019,Monday,-10.8,merchandise,Sub Box,M&T Debit Card
 5/6/2019,Monday,-10.32,uber,,Discover Credit Card
@@ -465,14 +465,14 @@
 5/10/2019,Friday,-22,merchandise,Clothes,Discover Credit Card
 5/10/2019,Friday,-16.19,merchandise,Makeup/Skin Care,Discover Credit Card
 5/10/2019,Friday,-6.07,uber,,Discover Credit Card
-5/11/2019,Saturday,-24,food,,Discover Credit Card
+5/11/2019,Saturday,-24,takeout,,Discover Credit Card
 5/11/2019,Saturday,-15.57,merchandise,Amazon,Discover Credit Card
 5/11/2019,Saturday,-14.52,merchandise,Amazon,Discover Credit Card
 5/11/2019,Saturday,-9.36,uber,,Discover Credit Card
 5/11/2019,Saturday,-7.15,uber,,Discover Credit Card
 5/13/2019,Monday,2.43,merchandise,Amazon,Chase Debit Card
 5/13/2019,Monday,60,deposit,,Chase Debit Card
-5/14/2019,Tuesday,-2,food,Coffee,Discover Credit Card
+5/14/2019,Tuesday,-2,takeout,Coffee,Discover Credit Card
 5/15/2019,Wednesday,-18.99,merchandise,Amazon,Discover Credit Card
 5/15/2019,Wednesday,-7.06,uber,,Discover Credit Card
 5/15/2019,Wednesday,-6.07,uber,,Discover Credit Card
@@ -483,7 +483,7 @@
 5/17/2019,Friday,-55.85,groceries,,Chase Debit Card
 5/17/2019,Friday,-42.58,groceries,,Chase Debit Card
 5/17/2019,Friday,-39.99,pharmacy,,Chase Debit Card
-5/17/2019,Friday,-32.21,food,,Discover Credit Card
+5/17/2019,Friday,-32.21,takeout,,Discover Credit Card
 5/17/2019,Friday,-9.99,merchandise,Amazon,Discover Credit Card
 5/18/2019,Saturday,-6.07,uber,,Discover Credit Card
 5/19/2019,Sunday,-24.94,merchandise,Amazon,Discover Credit Card
@@ -492,10 +492,10 @@
 5/21/2019,Tuesday,-43.38,merchandise,Makeup/Skin Care,Discover Credit Card
 5/21/2019,Tuesday,-33.43,merchandise,Best Buy,Discover Credit Card
 5/21/2019,Tuesday,-31.73,merchandise,Clothes,Discover Credit Card
-5/21/2019,Tuesday,-25.78,food,,Discover Credit Card
+5/21/2019,Tuesday,-25.78,takeout,,Discover Credit Card
 5/21/2019,Tuesday,-7.56,merchandise,Makeup/Skin Care,Chase Debit Card
 5/21/2019,Tuesday,-7.38,uber,,Discover Credit Card
-5/22/2019,Wednesday,-12.99,entertainment,,Chase Debit Card
+5/22/2019,Wednesday,-12.99,shopping,,Chase Debit Card
 5/22/2019,Wednesday,-10.8,merchandise,Makeup/Skin Care,M&T Debit Card
 5/22/2019,Wednesday,-7.56,uber,,Discover Credit Card
 5/23/2019,Thursday,-7.75,uber,,Discover Credit Card
@@ -521,7 +521,7 @@
 5/31/2019,Friday,-9.72,merchandise,Sub Box,M&T Debit Card
 5/31/2019,Friday,-6.5,merchandise,Sub Box,M&T Debit Card
 6/2/2019,Sunday,-289.67,merchandise,Best Buy,Discover Credit Card
-6/2/2019,Sunday,-36.89,food,,Discover Credit Card
+6/2/2019,Sunday,-36.89,takeout,,Discover Credit Card
 6/2/2019,Sunday,-28.45,merchandise,Amazon,Discover Credit Card
 6/3/2019,Monday,-57.49,groceries,,Chase Debit Card
 6/3/2019,Monday,-19.48,merchandise,Amazon,M&T Debit Card
@@ -537,7 +537,7 @@
 6/4/2019,Tuesday,-8.39,merchandise,Best Buy,Discover Credit Card
 6/4/2019,Tuesday,-7.75,uber,,Discover Credit Card
 6/5/2019,Wednesday,-27.65,travel,,Chase Debit Card
-6/5/2019,Wednesday,-11.43,food,,Chase Debit Card
+6/5/2019,Wednesday,-11.43,takeout,,Chase Debit Card
 6/5/2019,Wednesday,-8.86,uber,,Discover Credit Card
 6/5/2019,Wednesday,-7.55,merchandise,Amazon,Discover Credit Card
 6/5/2019,Wednesday,-5.39,merchandise,Amazon,Discover Credit Card
@@ -563,7 +563,7 @@
 6/10/2019,Monday,0.56,groceries,,Chase Debit Card
 6/11/2019,Tuesday,-48.84,groceries,,Chase Debit Card
 6/11/2019,Tuesday,-39.95,merchandise,Makeup/Skin Care,Chase Debit Card
-6/11/2019,Tuesday,-9.81,food,,Discover Credit Card
+6/11/2019,Tuesday,-9.81,takeout,,Discover Credit Card
 6/11/2019,Tuesday,-6.32,merchandise,Amazon,M&T Debit Card
 6/11/2019,Tuesday,-0.76,merchandise,Amazon,M&T Debit Card
 6/12/2019,Wednesday,-15.66,merchandise,Makeup/Skin Care,M&T Debit Card
@@ -572,7 +572,7 @@
 6/12/2019,Wednesday,-3.14,merchandise,Amazon,M&T Debit Card
 6/13/2019,Thursday,-9.73,uber,,Discover Credit Card
 6/13/2019,Thursday,-9.61,uber,,Discover Credit Card
-6/13/2019,Thursday,-3.95,food,Coffee,M&T Debit Card
+6/13/2019,Thursday,-3.95,takeout,Coffee,M&T Debit Card
 6/14/2019,Friday,-41.5,doctor,Driving,Chase Debit Card
 6/14/2019,Friday,-7.83,uber,,Discover Credit Card
 6/14/2019,Friday,20,bills,Credit Card,Discover Credit Card
@@ -589,8 +589,8 @@
 6/18/2019,Tuesday,5960,transfer,,Chase Debit Card
 6/19/2019,Wednesday,-6.11,merchandise,Amazon,Discover Credit Card
 6/19/2019,Wednesday,61.05,deposit,,M&T Debit Card
-6/20/2019,Thursday,-6.47,food,,Chase Debit Card
-6/20/2019,Thursday,-1.98,food,Coffee,Chase Debit Card
+6/20/2019,Thursday,-6.47,takeout,,Chase Debit Card
+6/20/2019,Thursday,-1.98,takeout,Coffee,Chase Debit Card
 6/21/2019,Friday,-6.48,merchandise,Amazon,Discover Credit Card
 6/22/2019,Saturday,-9.45,uber,,Discover Credit Card
 6/23/2019,Sunday,-5.08,merchandise,Amazon,Discover Credit Card
@@ -598,10 +598,10 @@
 6/24/2019,Monday,-53.5,groceries,,Chase Debit Card
 6/24/2019,Monday,-34.58,groceries,,Chase Debit Card
 6/24/2019,Monday,-25.94,merchandise,Amazon,Discover Credit Card
-6/24/2019,Monday,-23.65,food,,Chase Debit Card
+6/24/2019,Monday,-23.65,takeout,,Chase Debit Card
 6/24/2019,Monday,-21.98,uber,,Chase Debit Card
-6/24/2019,Monday,-20.51,food,,Discover Credit Card
-6/24/2019,Monday,-12.99,entertainment,,Chase Debit Card
+6/24/2019,Monday,-20.51,takeout,,Discover Credit Card
+6/24/2019,Monday,-12.99,shopping,,Chase Debit Card
 6/24/2019,Monday,-11.37,groceries,,Chase Debit Card
 6/24/2019,Monday,-8.64,merchandise,Amazon,Chase Debit Card
 6/24/2019,Monday,-5.12,merchandise,Amazon,Discover Credit Card
@@ -621,23 +621,23 @@
 6/27/2019,Thursday,-57.63,groceries,,Chase Debit Card
 6/28/2019,Friday,-37.19,merchandise,Makeup/Skin Care,Discover Credit Card
 6/28/2019,Friday,-32.39,merchandise,Sub Box,M&T Debit Card
-6/28/2019,Friday,-26.54,food,,Discover Credit Card
+6/28/2019,Friday,-26.54,takeout,,Discover Credit Card
 6/28/2019,Friday,-26,merchandise,Clothes,Discover Credit Card
 6/28/2019,Friday,-10.41,uber,,Discover Credit Card
 6/28/2019,Friday,-6.48,merchandise,Best Buy,Discover Credit Card
-6/28/2019,Friday,-4.74,food,Coffee,Discover Credit Card
+6/28/2019,Friday,-4.74,takeout,Coffee,Discover Credit Card
 6/29/2019,Saturday,-19.43,merchandise,Amazon,Discover Credit Card
 6/29/2019,Saturday,-5.6,merchandise,Amazon,Discover Credit Card
 6/30/2019,Sunday,-43.12,travel,,Discover Credit Card
-6/30/2019,Sunday,-8.22,food,Coffee,Discover Credit Card
+6/30/2019,Sunday,-8.22,takeout,Coffee,Discover Credit Card
 6/30/2019,Sunday,10.6,bills,Credit Card,Discover Credit Card
 7/1/2019,Monday,-53.72,merchandise,Makeup/Skin Care,M&T Debit Card
 7/1/2019,Monday,-50,travel,,Chase Debit Card
-7/1/2019,Monday,-33.43,food,,Chase Debit Card
-7/1/2019,Monday,-25,food,Starbucks,Chase Debit Card
+7/1/2019,Monday,-33.43,takeout,,Chase Debit Card
+7/1/2019,Monday,-25,takeout,Starbucks,Chase Debit Card
 7/1/2019,Monday,-24.95,merchandise,Sub Box,M&T Debit Card
 7/1/2019,Monday,-11.59,travel,,Chase Debit Card
-7/1/2019,Monday,-10.13,food,,Chase Debit Card
+7/1/2019,Monday,-10.13,takeout,,Chase Debit Card
 7/2/2019,Tuesday,-30.24,travel,,Chase Debit Card
 7/2/2019,Tuesday,-10.4,merchandise,Makeup/Skin Care,Discover Credit Card
 7/3/2019,Wednesday,-1385.65,bills,Rent,Chase Debit Card
@@ -645,7 +645,7 @@
 7/3/2019,Wednesday,-16.2,merchandise,Sub Box,M&T Debit Card
 7/3/2019,Wednesday,-1.95,bills,Rent,Chase Debit Card
 7/3/2019,Wednesday,203.92,deposit,,M&T Debit Card
-7/4/2019,Thursday,-45.08,entertainment,,Discover Credit Card
+7/4/2019,Thursday,-45.08,shopping,,Discover Credit Card
 7/4/2019,Thursday,-7.55,merchandise,Amazon,Discover Credit Card
 7/5/2019,Friday,-54.01,groceries,,Chase Debit Card
 7/5/2019,Friday,-27,merchandise,Makeup/Skin Care,M&T Debit Card
@@ -658,28 +658,28 @@
 7/5/2019,Friday,-0.5,uber,,M&T Debit Card
 7/6/2019,Saturday,-33.7,merchandise,Makeup/Skin Care,Discover Credit Card
 7/7/2019,Sunday,-7.17,merchandise,Amazon,Discover Credit Card
-7/7/2019,Sunday,-6.87,food,,Discover Credit Card
+7/7/2019,Sunday,-6.87,takeout,,Discover Credit Card
 7/7/2019,Sunday,-5.35,merchandise,Amazon,Discover Credit Card
 7/8/2019,Monday,-148.27,merchandise,Amazon,Chase Debit Card
 7/8/2019,Monday,-131.23,groceries,,Chase Debit Card
 7/8/2019,Monday,-43.19,groceries,,Discover Credit Card
-7/8/2019,Monday,-17.12,food,,Discover Credit Card
+7/8/2019,Monday,-17.12,takeout,,Discover Credit Card
 7/8/2019,Monday,-11.56,uber,,Discover Credit Card
-7/8/2019,Monday,-11.16,food,,Chase Debit Card
-7/8/2019,Monday,-7.31,food,Coffee,Chase Debit Card
+7/8/2019,Monday,-11.16,takeout,,Chase Debit Card
+7/8/2019,Monday,-7.31,takeout,Coffee,Chase Debit Card
 7/8/2019,Monday,-5.22,uber,,Discover Credit Card
 7/8/2019,Monday,-3.85,groceries,,Discover Credit Card
 7/9/2019,Tuesday,-36,merchandise,Makeup/Skin Care,Discover Credit Card
 7/9/2019,Tuesday,-21.57,merchandise,Clothes,Discover Credit Card
 7/9/2019,Tuesday,-12.92,merchandise,Makeup/Skin Care,Discover Credit Card
 7/9/2019,Tuesday,-11.87,merchandise,Amazon,Discover Credit Card
-7/9/2019,Tuesday,-8.83,food,Coffee,Discover Credit Card
-7/9/2019,Tuesday,-7.23,entertainment,,Discover Credit Card
-7/9/2019,Tuesday,-7.01,food,Coffee,Discover Credit Card
+7/9/2019,Tuesday,-8.83,takeout,Coffee,Discover Credit Card
+7/9/2019,Tuesday,-7.23,shopping,,Discover Credit Card
+7/9/2019,Tuesday,-7.01,takeout,Coffee,Discover Credit Card
 7/9/2019,Tuesday,-5.4,merchandise,Makeup/Skin Care,Chase Debit Card
 7/9/2019,Tuesday,-1.93,merchandise,Amazon,Discover Credit Card
-7/9/2019,Tuesday,-1.61,food,,Discover Credit Card
-7/9/2019,Tuesday,-0.99,entertainment,,Discover Credit Card
+7/9/2019,Tuesday,-1.61,takeout,,Discover Credit Card
+7/9/2019,Tuesday,-0.99,shopping,,Discover Credit Card
 7/9/2019,Tuesday,150.49,bills,Credit Card,Discover Credit Card
 7/10/2019,Wednesday,-203.92,merchandise,Best Buy,Discover Credit Card
 7/10/2019,Wednesday,-44.4,bills,Phone,Chase Debit Card
@@ -687,17 +687,17 @@
 7/10/2019,Wednesday,-11.91,uber,,Discover Credit Card
 7/10/2019,Wednesday,-9.11,uber,,Discover Credit Card
 7/10/2019,Wednesday,-8.91,uber,,Discover Credit Card
-7/10/2019,Wednesday,-4.8,food,,Discover Credit Card
-7/10/2019,Wednesday,-2.69,food,,Discover Credit Card
+7/10/2019,Wednesday,-4.8,takeout,,Discover Credit Card
+7/10/2019,Wednesday,-2.69,takeout,,Discover Credit Card
 7/10/2019,Wednesday,150.49,deposit,,M&T Debit Card
 7/11/2019,Thursday,-9.85,uber,,Discover Credit Card
-7/12/2019,Friday,-18.9,food,,Discover Credit Card
+7/12/2019,Friday,-18.9,takeout,,Discover Credit Card
 7/12/2019,Friday,-17.23,merchandise,Amazon,Discover Credit Card
 7/12/2019,Friday,-7.29,merchandise,Amazon,Discover Credit Card
 7/13/2019,Saturday,-9.74,merchandise,Amazon,Discover Credit Card
 7/14/2019,Sunday,-29.7,merchandise,Makeup/Skin Care,Discover Credit Card
 7/14/2019,Sunday,-27.53,merchandise,Makeup/Skin Care,Discover Credit Card
-7/14/2019,Sunday,-22.36,food,,Discover Credit Card
+7/14/2019,Sunday,-22.36,takeout,,Discover Credit Card
 7/14/2019,Sunday,-20.2,merchandise,Makeup/Skin Care,Discover Credit Card
 7/14/2019,Sunday,-18.36,merchandise,Amazon,Discover Credit Card
 7/14/2019,Sunday,-11.44,merchandise,Amazon,Discover Credit Card
@@ -705,25 +705,25 @@
 7/15/2019,Monday,-269.99,merchandise,Best Buy,Chase Debit Card
 7/15/2019,Monday,-53.54,groceries,,Chase Debit Card
 7/15/2019,Monday,-36.12,merchandise,Amazon,Chase Debit Card
-7/15/2019,Monday,-2.16,food,Coffee,Discover Credit Card
-7/15/2019,Monday,-2,food,Coffee,Discover Credit Card
+7/15/2019,Monday,-2.16,takeout,Coffee,Discover Credit Card
+7/15/2019,Monday,-2,takeout,Coffee,Discover Credit Card
 7/16/2019,Tuesday,-58.96,merchandise,Amazon,Discover Credit Card
 7/16/2019,Tuesday,-38.01,merchandise,Amazon,Discover Credit Card
-7/16/2019,Tuesday,-19.16,food,,Discover Credit Card
-7/16/2019,Tuesday,-16.18,food,,Discover Credit Card
+7/16/2019,Tuesday,-19.16,takeout,,Discover Credit Card
+7/16/2019,Tuesday,-16.18,takeout,,Discover Credit Card
 7/16/2019,Tuesday,-6.98,uber,,Discover Credit Card
-7/16/2019,Tuesday,-6,food,Coffee,Discover Credit Card
-7/16/2019,Tuesday,-1.08,food,,Discover Credit Card
+7/16/2019,Tuesday,-6,takeout,Coffee,Discover Credit Card
+7/16/2019,Tuesday,-1.08,takeout,,Discover Credit Card
 7/17/2019,Wednesday,-35.26,groceries,,Chase Debit Card
 7/17/2019,Wednesday,-10.53,uber,,Discover Credit Card
 7/17/2019,Wednesday,-6.98,uber,,Discover Credit Card
-7/17/2019,Wednesday,-1,food,Coffee,Chase Debit Card
-7/18/2019,Thursday,-28.77,food,,Chase Debit Card
+7/17/2019,Wednesday,-1,takeout,Coffee,Chase Debit Card
+7/18/2019,Thursday,-28.77,takeout,,Chase Debit Card
 7/18/2019,Thursday,-21.59,merchandise,Amazon,Discover Credit Card
 7/18/2019,Thursday,-5.01,uber,,Discover Credit Card
 7/19/2019,Friday,-17.23,merchandise,Amazon,Discover Credit Card
-7/19/2019,Friday,-4,food,,Chase Debit Card
-7/20/2019,Saturday,-9.02,food,,Discover Credit Card
+7/19/2019,Friday,-4,takeout,,Chase Debit Card
+7/20/2019,Saturday,-9.02,takeout,,Discover Credit Card
 7/21/2019,Sunday,-21.5,merchandise,Best Buy,Discover Credit Card
 7/22/2019,Monday,-72.87,merchandise,Clothes,Chase Debit Card
 7/22/2019,Monday,-56.35,merchandise,Best Buy,M&T Debit Card
@@ -731,40 +731,40 @@
 7/22/2019,Monday,-37.8,doctor,Driving,Chase Debit Card
 7/22/2019,Monday,-22.68,merchandise,Sub Box,M&T Debit Card
 7/22/2019,Monday,-21.59,merchandise,Best Buy,M&T Debit Card
-7/22/2019,Monday,-21.02,food,,Chase Debit Card
+7/22/2019,Monday,-21.02,takeout,,Chase Debit Card
 7/22/2019,Monday,-16.6,merchandise,Clothes,Chase Debit Card
 7/22/2019,Monday,-15.12,merchandise,Makeup/Skin Care,Chase Debit Card
-7/22/2019,Monday,-12.99,entertainment,,Chase Debit Card
+7/22/2019,Monday,-12.99,shopping,,Chase Debit Card
 7/22/2019,Monday,-10.8,merchandise,Clothes,Chase Debit Card
 7/22/2019,Monday,-8.71,uber,,Discover Credit Card
 7/22/2019,Monday,4.32,merchandise,Makeup/Skin Care,M&T Debit Card
 7/23/2019,Tuesday,-109.73,groceries,,Chase Debit Card
-7/23/2019,Tuesday,-43.91,food,,Chase Debit Card
-7/23/2019,Tuesday,-25.13,food,,Chase Debit Card
-7/23/2019,Tuesday,-5.36,food,Coffee,Discover Credit Card
+7/23/2019,Tuesday,-43.91,takeout,,Chase Debit Card
+7/23/2019,Tuesday,-25.13,takeout,,Chase Debit Card
+7/23/2019,Tuesday,-5.36,takeout,Coffee,Discover Credit Card
 7/23/2019,Tuesday,9.71,merchandise,Amazon,Discover Credit Card
 7/23/2019,Tuesday,17.27,merchandise,Amazon,Discover Credit Card
 7/23/2019,Tuesday,19.33,merchandise,Amazon,Discover Credit Card
-7/24/2019,Wednesday,-11.88,food,,Chase Debit Card
+7/24/2019,Wednesday,-11.88,takeout,,Chase Debit Card
 7/24/2019,Wednesday,-6.42,groceries,,M&T Debit Card
 7/24/2019,Wednesday,-4.32,merchandise,Makeup/Skin Care,M&T Debit Card
-7/24/2019,Wednesday,-2.59,food,,M&T Debit Card
+7/24/2019,Wednesday,-2.59,takeout,,M&T Debit Card
 7/24/2019,Wednesday,389.65,deposit,,M&T Debit Card
 7/25/2019,Thursday,-43.31,merchandise,Clothes,M&T Debit Card
-7/25/2019,Thursday,-30,food,,Chase Debit Card
-7/25/2019,Thursday,-6.21,food,Coffee,Discover Credit Card
-7/25/2019,Thursday,-2,food,Coffee,Discover Credit Card
+7/25/2019,Thursday,-30,takeout,,Chase Debit Card
+7/25/2019,Thursday,-6.21,takeout,Coffee,Discover Credit Card
+7/25/2019,Thursday,-2,takeout,Coffee,Discover Credit Card
 7/26/2019,Friday,-43.2,merchandise,Makeup/Skin Care,M&T Debit Card
 7/26/2019,Friday,-36,doctor,Driving,Chase Debit Card
-7/26/2019,Friday,-3,food,,Chase Debit Card
-7/28/2019,Sunday,-25.22,food,,Discover Credit Card
-7/28/2019,Sunday,-20.8,food,,Discover Credit Card
-7/28/2019,Sunday,-4.62,food,,Discover Credit Card
-7/29/2019,Monday,-50,food,,Chase Debit Card
+7/26/2019,Friday,-3,takeout,,Chase Debit Card
+7/28/2019,Sunday,-25.22,takeout,,Discover Credit Card
+7/28/2019,Sunday,-20.8,takeout,,Discover Credit Card
+7/28/2019,Sunday,-4.62,takeout,,Discover Credit Card
+7/29/2019,Monday,-50,takeout,,Chase Debit Card
 7/29/2019,Monday,-40,doctor,Driving,M&T Debit Card
 7/29/2019,Monday,-7.75,uber,,Chase Debit Card
 7/29/2019,Monday,-7.22,groceries,,Chase Debit Card
-7/29/2019,Monday,-4.53,food,Coffee,Discover Credit Card
+7/29/2019,Monday,-4.53,takeout,Coffee,Discover Credit Card
 7/29/2019,Monday,-4.05,merchandise,Amazon,Discover Credit Card
 7/29/2019,Monday,24.62,bills,Credit Card,Discover Credit Card
 7/30/2019,Tuesday,-420,bills,Rent,Chase Debit Card
@@ -776,13 +776,13 @@
 7/31/2019,Wednesday,-10.32,uber,,Chase Debit Card
 7/31/2019,Wednesday,-10.15,uber,,Chase Debit Card
 7/31/2019,Wednesday,-9.98,uber,,Chase Debit Card
-7/31/2019,Wednesday,-8.42,food,Coffee,Discover Credit Card
-7/31/2019,Wednesday,-8.09,food,,Chase Debit Card
-7/31/2019,Wednesday,-3.51,food,Coffee,Chase Debit Card
+7/31/2019,Wednesday,-8.42,takeout,Coffee,Discover Credit Card
+7/31/2019,Wednesday,-8.09,takeout,,Chase Debit Card
+7/31/2019,Wednesday,-3.51,takeout,Coffee,Chase Debit Card
 7/31/2019,Wednesday,389.65,deposit,,M&T Debit Card
 8/1/2019,Thursday,-193.32,groceries,,Discover Credit Card
-8/1/2019,Thursday,-46.06,food,,Chase Debit Card
-8/1/2019,Thursday,-17.17,food,,Chase Debit Card
+8/1/2019,Thursday,-46.06,takeout,,Chase Debit Card
+8/1/2019,Thursday,-17.17,takeout,,Chase Debit Card
 8/1/2019,Thursday,-10.8,merchandise,Sub Box,M&T Debit Card
 8/1/2019,Thursday,-10.06,uber,,Chase Debit Card
 8/1/2019,Thursday,-9.63,uber,,Chase Debit Card
@@ -793,17 +793,17 @@
 8/2/2019,Friday,-64.75,groceries,,Chase Debit Card
 8/2/2019,Friday,-26.28,bills,Rent,Chase Debit Card
 8/2/2019,Friday,-22.68,merchandise,Sub Box,M&T Debit Card
-8/2/2019,Friday,-22.13,food,,Chase Debit Card
+8/2/2019,Friday,-22.13,takeout,,Chase Debit Card
 8/2/2019,Friday,-18.62,merchandise,Clothes,M&T Debit Card
 8/2/2019,Friday,15,transfer,,Chase Debit Card
-8/2/2019,Friday,-10.64,food,,Chase Debit Card
-8/2/2019,Friday,-9.02,food,,Discover Credit Card
+8/2/2019,Friday,-10.64,takeout,,Chase Debit Card
+8/2/2019,Friday,-9.02,takeout,,Discover Credit Card
 8/2/2019,Friday,-1.95,bills,Rent,Chase Debit Card
 8/2/2019,Friday,33.56,bills,Credit Card,Discover Credit Card
 8/2/2019,Friday,2070,transfer,,Chase Debit Card
 8/3/2019,Saturday,-14,merchandise,Amazon,Discover Credit Card
 8/5/2019,Monday,-201.56,groceries,,Chase Debit Card
-8/5/2019,Monday,-36.4,food,,Chase Debit Card
+8/5/2019,Monday,-36.4,takeout,,Chase Debit Card
 8/5/2019,Monday,-29.13,groceries,,Chase Debit Card
 8/5/2019,Monday,-16.2,merchandise,Sub Box,M&T Debit Card
 8/5/2019,Monday,-11.18,merchandise,Amazon,Chase Debit Card
@@ -824,25 +824,25 @@
 8/7/2019,Wednesday,-1695,tuition,,Chase Debit Card
 8/7/2019,Wednesday,-420,bills,Rent,Chase Debit Card
 8/7/2019,Wednesday,-87.89,groceries,,Discover Credit Card
-8/7/2019,Wednesday,-42,food,,Chase Debit Card
-8/7/2019,Wednesday,-7.01,entertainment,,Discover Credit Card
+8/7/2019,Wednesday,-42,takeout,,Chase Debit Card
+8/7/2019,Wednesday,-7.01,shopping,,Discover Credit Card
 8/7/2019,Wednesday,20,deposit,,Chase Debit Card
 8/8/2019,Thursday,-44.4,bills,Phone,Chase Debit Card
-8/8/2019,Thursday,-0.99,entertainment,,Discover Credit Card
+8/8/2019,Thursday,-0.99,shopping,,Discover Credit Card
 8/9/2019,Friday,-4.32,merchandise,Makeup/Skin Care,M&T Debit Card
-8/9/2019,Friday,-4.15,food,,Chase Debit Card
-8/9/2019,Friday,-0.27,food,,Chase Debit Card
+8/9/2019,Friday,-4.15,takeout,,Chase Debit Card
+8/9/2019,Friday,-0.27,takeout,,Chase Debit Card
 8/12/2019,Monday,-80.62,groceries,,Chase Debit Card
 8/12/2019,Monday,-47.83,groceries,,Chase Debit Card
 8/12/2019,Monday,-20.8,merchandise,Amazon,Chase Debit Card
-8/12/2019,Monday,-4.59,food,,Chase Debit Card
+8/12/2019,Monday,-4.59,takeout,,Chase Debit Card
 8/12/2019,Monday,-4.32,merchandise,Makeup/Skin Care,M&T Debit Card
 8/12/2019,Monday,5.7,merchandise,Amazon,Chase Debit Card
-8/13/2019,Tuesday,-21.54,food,,M&T Debit Card
-8/13/2019,Tuesday,-11.85,food,,Chase Debit Card
+8/13/2019,Tuesday,-21.54,takeout,,M&T Debit Card
+8/13/2019,Tuesday,-11.85,takeout,,Chase Debit Card
 8/13/2019,Tuesday,-10.8,merchandise,Makeup/Skin Care,M&T Debit Card
 8/13/2019,Tuesday,-6.25,merchandise,Amazon,Chase Debit Card
-8/13/2019,Tuesday,-1.83,food,,Chase Debit Card
+8/13/2019,Tuesday,-1.83,takeout,,Chase Debit Card
 8/14/2019,Wednesday,-30.77,merchandise,Amazon,Discover Credit Card
 8/14/2019,Wednesday,-16.64,merchandise,Makeup/Skin Care,M&T Debit Card
 8/14/2019,Wednesday,-3.05,groceries,,M&T Debit Card
@@ -851,18 +851,18 @@
 8/15/2019,Thursday,-12.94,merchandise,Amazon,Discover Credit Card
 8/15/2019,Thursday,-9.09,merchandise,Amazon,Discover Credit Card
 8/15/2019,Thursday,-8.26,merchandise,Amazon,Discover Credit Card
-8/16/2019,Friday,-7.23,entertainment,,Discover Credit Card
+8/16/2019,Friday,-7.23,shopping,,Discover Credit Card
 8/19/2019,Monday,-43.19,merchandise,Clothes,M&T Debit Card
-8/19/2019,Monday,-30.53,food,,Discover Credit Card
+8/19/2019,Monday,-30.53,takeout,,Discover Credit Card
 8/19/2019,Monday,-27,merchandise,Makeup/Skin Care,M&T Debit Card
 8/19/2019,Monday,8.26,merchandise,Amazon,Discover Credit Card
 8/20/2019,Tuesday,-47.05,groceries,,Chase Debit Card
-8/20/2019,Tuesday,-17.82,food,,M&T Debit Card
-8/20/2019,Tuesday,-5.18,food,,M&T Debit Card
-8/21/2019,Wednesday,-22.67,food,,Discover Credit Card
+8/20/2019,Tuesday,-17.82,takeout,,M&T Debit Card
+8/20/2019,Tuesday,-5.18,takeout,,M&T Debit Card
+8/21/2019,Wednesday,-22.67,takeout,,Discover Credit Card
 8/21/2019,Wednesday,-15.53,merchandise,Amazon,Discover Credit Card
 8/21/2019,Wednesday,389.65,deposit,,M&T Debit Card
-8/22/2019,Thursday,-12.99,entertainment,,Chase Debit Card
+8/22/2019,Thursday,-12.99,shopping,,Chase Debit Card
 8/23/2019,Friday,0.36,merchandise,Amazon,Chase Debit Card
 8/24/2019,Saturday,-12.95,merchandise,Amazon,Discover Credit Card
 8/26/2019,Monday,-19.27,doctor,,Chase Debit Card
@@ -870,22 +870,22 @@
 8/26/2019,Monday,2.75,merchandise,Amazon,Chase Debit Card
 8/26/2019,Monday,3070,transfer,,Chase Debit Card
 8/27/2019,Tuesday,-47.48,groceries,,Chase Debit Card
-8/27/2019,Tuesday,-13.77,food,,Chase Debit Card
+8/27/2019,Tuesday,-13.77,takeout,,Chase Debit Card
 8/27/2019,Tuesday,-5,merchandise,Sub Box,M&T Debit Card
 8/28/2019,Wednesday,-93.8,groceries,,M&T Debit Card
 8/28/2019,Wednesday,-7.59,merchandise,Amazon,Discover Credit Card
 8/28/2019,Wednesday,-3.27,merchandise,Amazon,Discover Credit Card
 8/28/2019,Wednesday,389.65,deposit,,M&T Debit Card
 8/30/2019,Friday,-35.64,merchandise,Clothes,M&T Debit Card
-8/30/2019,Friday,-25.1,food,,M&T Debit Card
+8/30/2019,Friday,-25.1,takeout,,M&T Debit Card
 8/30/2019,Friday,-15,groceries,,Chase Debit Card
 8/30/2019,Friday,-13.48,merchandise,Makeup/Skin Care,M&T Debit Card
 8/30/2019,Friday,9,merchandise,Amazon,Chase Debit Card
 8/30/2019,Friday,43.19,merchandise,Clothes,M&T Debit Card
 9/2/2019,Monday,-21.59,merchandise,Best Buy,Discover Credit Card
-9/2/2019,Monday,-16.71,food,,Discover Credit Card
+9/2/2019,Monday,-16.71,takeout,,Discover Credit Card
 9/2/2019,Monday,-12.76,merchandise,Best Buy,Discover Credit Card
-9/2/2019,Monday,-8.69,food,,Discover Credit Card
+9/2/2019,Monday,-8.69,takeout,,Discover Credit Card
 9/3/2019,Tuesday,-420,bills,Rent,Chase Debit Card
 9/3/2019,Tuesday,-52.34,merchandise,Clothes,M&T Debit Card
 9/3/2019,Tuesday,-37.26,merchandise,Makeup/Skin Care,M&T Debit Card
@@ -894,37 +894,37 @@
 9/3/2019,Tuesday,-15.6,merchandise,Clothes,M&T Debit Card
 9/3/2019,Tuesday,-14.45,merchandise,Makeup/Skin Care,M&T Debit Card
 9/3/2019,Tuesday,-11.66,uber,,Chase Debit Card
-9/3/2019,Tuesday,-11.31,food,,M&T Debit Card
+9/3/2019,Tuesday,-11.31,takeout,,M&T Debit Card
 9/3/2019,Tuesday,-10.93,uber,,Chase Debit Card
 9/3/2019,Tuesday,-10.8,merchandise,Sub Box,M&T Debit Card
-9/3/2019,Tuesday,-4.53,food,,M&T Debit Card
-9/3/2019,Tuesday,-2.86,food,,M&T Debit Card
-9/4/2019,Wednesday,-63.72,entertainment,,Chase Debit Card
+9/3/2019,Tuesday,-4.53,takeout,,M&T Debit Card
+9/3/2019,Tuesday,-2.86,takeout,,M&T Debit Card
+9/4/2019,Wednesday,-63.72,shopping,,Chase Debit Card
 9/4/2019,Wednesday,-33,merchandise,Clothes,M&T Debit Card
-9/4/2019,Wednesday,-2.04,food,Coffee,M&T Debit Card
-9/4/2019,Wednesday,-2.04,food,Coffee,M&T Debit Card
-9/4/2019,Wednesday,0.7,entertainment,,Discover Credit Card
+9/4/2019,Wednesday,-2.04,takeout,Coffee,M&T Debit Card
+9/4/2019,Wednesday,-2.04,takeout,Coffee,M&T Debit Card
+9/4/2019,Wednesday,0.7,shopping,,Discover Credit Card
 9/4/2019,Wednesday,8.31,merchandise,Amazon,Chase Debit Card
 9/4/2019,Wednesday,8.31,merchandise,Amazon,Chase Debit Card
 9/4/2019,Wednesday,389.65,deposit,,M&T Debit Card
 9/5/2019,Thursday,-65,merchandise,Clothes,M&T Debit Card
 9/6/2019,Friday,-40.39,groceries,,Chase Debit Card
-9/6/2019,Friday,-26.68,food,,M&T Debit Card
+9/6/2019,Friday,-26.68,takeout,,M&T Debit Card
 9/6/2019,Friday,-16.2,merchandise,Sub Box,M&T Debit Card
-9/6/2019,Friday,-11.4,food,,M&T Debit Card
-9/6/2019,Friday,-5.38,food,,M&T Debit Card
-9/6/2019,Friday,-4.05,food,Coffee,M&T Debit Card
+9/6/2019,Friday,-11.4,takeout,,M&T Debit Card
+9/6/2019,Friday,-5.38,takeout,,M&T Debit Card
+9/6/2019,Friday,-4.05,takeout,Coffee,M&T Debit Card
 9/6/2019,Friday,10.05,bills,Credit Card,Discover Credit Card
 9/7/2019,Saturday,-244.61,merchandise,Clothes,Discover Credit Card
 9/8/2019,Sunday,-20.47,merchandise,Amazon,Discover Credit Card
-9/8/2019,Sunday,-0.99,entertainment,,Discover Credit Card
+9/8/2019,Sunday,-0.99,shopping,,Discover Credit Card
 9/9/2019,Monday,-44.4,bills,Phone,Chase Debit Card
 9/9/2019,Monday,-28.8,groceries,,M&T Debit Card
 9/9/2019,Monday,-27.02,merchandise,Clothes,M&T Debit Card
-9/9/2019,Monday,-25,food,Super Card,Chase Debit Card
-9/9/2019,Monday,-21,food,,M&T Debit Card
+9/9/2019,Monday,-25,takeout,Super Card,Chase Debit Card
+9/9/2019,Monday,-21,takeout,,M&T Debit Card
 9/9/2019,Monday,-20.4,doctor,Driving,Chase Debit Card
-9/9/2019,Monday,-14.35,food,,M&T Debit Card
+9/9/2019,Monday,-14.35,takeout,,M&T Debit Card
 9/9/2019,Monday,-12.1,uber,,Chase Debit Card
 9/9/2019,Monday,-11.45,uber,,Chase Debit Card
 9/9/2019,Monday,-10.66,merchandise,Amazon,Discover Credit Card
@@ -932,34 +932,34 @@
 9/9/2019,Monday,8.71,uber,,Chase Debit Card
 9/10/2019,Tuesday,-78.28,merchandise,Amazon,Discover Credit Card
 9/10/2019,Tuesday,-13.6,merchandise,Amazon,Discover Credit Card
-9/10/2019,Tuesday,-10.96,food,,M&T Debit Card
+9/10/2019,Tuesday,-10.96,takeout,,M&T Debit Card
 9/11/2019,Wednesday,-7.75,uber,,Chase Debit Card
 9/11/2019,Wednesday,-7.75,uber,,Chase Debit Card
 9/11/2019,Wednesday,203.92,deposit,,M&T Debit Card
-9/12/2019,Thursday,-25,food,Starbucks,Chase Debit Card
-9/12/2019,Thursday,-11.37,food,,M&T Debit Card
+9/12/2019,Thursday,-25,takeout,Starbucks,Chase Debit Card
+9/12/2019,Thursday,-11.37,takeout,,M&T Debit Card
 9/12/2019,Thursday,11.18,merchandise,Amazon,Chase Debit Card
-9/13/2019,Friday,-8.91,food,,M&T Debit Card
+9/13/2019,Friday,-8.91,takeout,,M&T Debit Card
 9/13/2019,Friday,-7.75,uber,,Chase Debit Card
 9/13/2019,Friday,1.66,merchandise,Amazon,Chase Debit Card
-9/16/2019,Monday,-47.54,food,,M&T Debit Card
-9/16/2019,Monday,-38.22,food,,M&T Debit Card
+9/16/2019,Monday,-47.54,takeout,,M&T Debit Card
+9/16/2019,Monday,-38.22,takeout,,M&T Debit Card
 9/16/2019,Monday,-20.78,uber,,Chase Debit Card
 9/16/2019,Monday,-16.2,merchandise,Makeup/Skin Care,M&T Debit Card
 9/16/2019,Monday,-10.35,uber,,Chase Debit Card
 9/16/2019,Monday,-9.71,merchandise,Amazon,Discover Credit Card
-9/16/2019,Monday,-8.2,entertainment,,M&T Debit Card
+9/16/2019,Monday,-8.2,shopping,,M&T Debit Card
 9/16/2019,Monday,-7.75,uber,,Chase Debit Card
 9/17/2019,Tuesday,-28.87,merchandise,Clothes,M&T Debit Card
-9/17/2019,Tuesday,-25,food,Super Card,Chase Debit Card
-9/17/2019,Tuesday,-19.42,food,,Discover Credit Card
+9/17/2019,Tuesday,-25,takeout,Super Card,Chase Debit Card
+9/17/2019,Tuesday,-19.42,takeout,,Discover Credit Card
 9/17/2019,Tuesday,15,transfer,,Chase Debit Card
 9/17/2019,Tuesday,-10.26,merchandise,Makeup/Skin Care,M&T Debit Card
 9/17/2019,Tuesday,24950,tuition,,Chase Debit Card
 9/18/2019,Wednesday,-89.81,groceries,,Chase Debit Card
 9/18/2019,Wednesday,-21.24,merchandise,Clothes,Discover Credit Card
 9/18/2019,Wednesday,203.92,deposit,,M&T Debit Card
-9/20/2019,Friday,-19.96,food,,Discover Credit Card
+9/20/2019,Friday,-19.96,takeout,,Discover Credit Card
 9/20/2019,Friday,-14.03,merchandise,Amazon,Discover Credit Card
 9/20/2019,Friday,-10.56,uber,,Chase Debit Card
 9/20/2019,Friday,-3,doctor,,Chase Debit Card
@@ -967,18 +967,18 @@
 9/21/2019,Saturday,-214.92,merchandise,Best Buy,American Express Credit Card
 9/21/2019,Saturday,-62.61,merchandise,Best Buy,American Express Credit Card
 9/21/2019,Saturday,-51.97,merchandise,Clothes,American Express Credit Card
-9/21/2019,Saturday,-23.62,food,,Discover Credit Card
+9/21/2019,Saturday,-23.62,takeout,,Discover Credit Card
 9/21/2019,Saturday,-19.42,merchandise,Amazon,American Express Credit Card
 9/21/2019,Saturday,-11.88,merchandise,Best Buy,American Express Credit Card
-9/21/2019,Saturday,-8.63,entertainment,,American Express Credit Card
+9/21/2019,Saturday,-8.63,shopping,,American Express Credit Card
 9/21/2019,Saturday,-4.31,merchandise,Amazon,American Express Credit Card
 9/21/2019,Saturday,-3.24,merchandise,Best Buy,American Express Credit Card
 9/21/2019,Saturday,30.22,merchandise,Best Buy,American Express Credit Card
-9/22/2019,Sunday,-51.13,food,,American Express Credit Card
+9/22/2019,Sunday,-51.13,takeout,,American Express Credit Card
 9/23/2019,Monday,-31.2,merchandise,Clothes,M&T Debit Card
-9/23/2019,Monday,-16.17,food,,M&T Debit Card
+9/23/2019,Monday,-16.17,takeout,,M&T Debit Card
 9/23/2019,Monday,-15.86,uber,,Chase Debit Card
-9/23/2019,Monday,-12.99,entertainment,,Chase Debit Card
+9/23/2019,Monday,-12.99,shopping,,Chase Debit Card
 9/23/2019,Monday,-12.95,merchandise,Amazon,American Express Credit Card
 9/23/2019,Monday,-11.43,uber,,Chase Debit Card
 9/23/2019,Monday,-10.75,uber,,Chase Debit Card
@@ -988,16 +988,16 @@
 9/23/2019,Monday,0.18,merchandise,Clothes,M&T Debit Card
 9/23/2019,Monday,5.05,merchandise,Makeup/Skin Care,M&T Debit Card
 9/23/2019,Monday,31.2,merchandise,Clothes,M&T Debit Card
-9/24/2019,Tuesday,-23.76,food,,Discover Credit Card
+9/24/2019,Tuesday,-23.76,takeout,,Discover Credit Card
 9/24/2019,Tuesday,200,bills,Credit Card,American Express Credit Card
 9/25/2019,Wednesday,-68.5,groceries,,American Express Credit Card
-9/25/2019,Wednesday,-34.93,food,,Discover Credit Card
-9/25/2019,Wednesday,-24.3,food,,Discover Credit Card
+9/25/2019,Wednesday,-34.93,takeout,,Discover Credit Card
+9/25/2019,Wednesday,-24.3,takeout,,Discover Credit Card
 9/25/2019,Wednesday,-12.45,merchandise,Amazon,American Express Credit Card
 9/25/2019,Wednesday,-7.75,uber,,Chase Debit Card
 9/25/2019,Wednesday,-2.75,groceries,,Discover Credit Card
 9/25/2019,Wednesday,203.92,deposit,,M&T Debit Card
-9/26/2019,Thursday,-24.3,food,,Discover Credit Card
+9/26/2019,Thursday,-24.3,takeout,,Discover Credit Card
 9/26/2019,Thursday,-13.77,merchandise,Amazon,American Express Credit Card
 9/26/2019,Thursday,-6.47,merchandise,Amazon,American Express Credit Card
 9/26/2019,Thursday,-6.15,merchandise,Amazon,American Express Credit Card
@@ -1005,8 +1005,8 @@
 9/27/2019,Friday,-72.53,merchandise,Clothes,American Express Credit Card
 9/27/2019,Friday,-55.04,merchandise,Clothes,American Express Credit Card
 9/27/2019,Friday,-27,merchandise,Makeup/Skin Care,American Express Credit Card
-9/27/2019,Friday,-25,food,Super Card,Chase Debit Card
-9/27/2019,Friday,-11.3,food,,M&T Debit Card
+9/27/2019,Friday,-25,takeout,Super Card,Chase Debit Card
+9/27/2019,Friday,-11.3,takeout,,M&T Debit Card
 9/27/2019,Friday,-9.72,merchandise,Makeup/Skin Care,American Express Credit Card
 9/27/2019,Friday,-6.48,merchandise,Makeup/Skin Care,M&T Debit Card
 9/28/2019,Saturday,-32.16,merchandise,Makeup/Skin Care,American Express Credit Card
