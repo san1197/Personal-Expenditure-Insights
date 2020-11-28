@@ -304,11 +304,6 @@
 
 
 
-    <!-- http://www.semanticweb.org/admin/ontologies/2020/10/category#petfood -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/10/category#petfood">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/10/category#food"/>
-    </owl:Class>
 
 
 
