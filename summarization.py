@@ -1,5 +1,5 @@
 import sys, random
-
+#To convert triples to sentences
 if __name__ == '__main__':
     f = open("triples.txt", "r")
     lines = f.readlines()

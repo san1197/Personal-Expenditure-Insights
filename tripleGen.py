@@ -2,13 +2,10 @@ from owlready2 import get_ontology
 from rdflib import Graph, Namespace, Literal, RDF, URIRef
 import spacy
 
-'''Extracting sub, pred and obj from unstructured data'''
+# Breaking down sentences into nouns, pronoun and verbs using spacy
 nlp = spacy.load('en_core_web_sm')
-
 file_doc = open("input.txt", "r")
-
 doc = file_doc.read()
-
 complete_doc = nlp(doc)
 
 nouns = []
@@ -36,15 +33,13 @@ while i < len(nouns) and j < len(values) and k < len(pronoun):
     j += 1
     k += 1
 
+#Access base ontology
 onto = get_ontology("https://raw.githubusercontent.com/san1197/SER531-Project---Group-19/main/categories.owl").load()
 namespace = onto.get_namespace("https://raw.githubusercontent.com/san1197/SER531-Project---Group-19/main/categories.owl")
-IncType = onto.search(iri = "*income")
-ExpType = onto.search(iri = "*expense")
 
 
-# To add N-Triples
+#Add SPO as Triples to triples.txt
 g = Graph()
-
 for sub, pred, obj in spo:
     sub_url = URIRef(sub)
     pred_url = URIRef(pred)
@@ -66,7 +61,8 @@ f.close()
 print("\n****** Triples Generated **********")
 print("****** Stored in triples.txt **********\n")
 
-# To derive insights using OWL
+
+# To derive insights using OWL file
 totalIncome = 0
 totalExpense = 0
 maxExpense = 0
@@ -97,10 +93,9 @@ for i in range(len(users)):
         usertag += str(i)
         user1 = onto.User(usertag,hasName=users[i])
 
-
+#Adding instances to categories.owl
 t = 0
 for s,p,o in g:
-    #Adding transactions
     ss = "*"
     uu = "*"
     ss += str(p)
@@ -119,12 +114,11 @@ for s,p,o in g:
         print("Category of -",str(p),"not found in Ontology")
     t1 = onto.Transaction(ttag,ofType=typeforEI,ofAmount=str(o),doneBy=usersearch)
 onto.save(file = "categorieswithIndividuals.owl")
-
-
-
 g1 = Graph()
 g1.parse("categorieswithIndividuals.owl")
 
+
+#SPARQL Querying to derive metrics
 incomeQuery = g1.query(
     '''
     PREFIX ie: <http://www.semanticweb.org/admin/ontologies/2020/10/category#>
@@ -312,7 +306,7 @@ for k in range(len(types)):
     typeAmountListT.append(typeAmount)
 
 
-
+#Plotting user chosen graphs as results
 import matplotlib.pyplot as plt
 plt.style.use('ggplot')
 print("Choose from the below visualizations")

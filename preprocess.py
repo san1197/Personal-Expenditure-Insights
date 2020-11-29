@@ -1,6 +1,7 @@
 import pandas as pd
 import random
 
+#To convert csv to sentences
 expenseData = pd.read_csv('dataset/Expenses Data Set.csv', low_memory=False)
 expenseData_DF = pd.DataFrame(expenseData)
 
