@@ -19,4 +19,4 @@ if __name__ == '__main__':
             sentence = subject + " " + activity + " $" + object + " for " + predicate
         summarizeFile.write(sentence + "\n")
     print("\n****** Summarization Complete **********")
-    print("\n****** Sentences stored in summarization.txt **********\n")
+    print("****** Sentences stored in summarization.txt **********\n")

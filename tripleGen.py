@@ -115,6 +115,8 @@ for s,p,o in g:
             userkill = str(i).split(".")
     uu += userkill[1]
     usersearch = onto.search(iri = uu)
+    if(typeforEI == []):
+        print("Category of -",str(p),"not found in Ontology")
     t1 = onto.Transaction(ttag,ofType=typeforEI,ofAmount=str(o),doneBy=usersearch)
 onto.save(file = "categorieswithIndividuals.owl")
 

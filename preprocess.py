@@ -42,4 +42,4 @@ for index, row in expenseData_DF.iterrows():
     n = inputFile.write("\n")
 
 print("\n****** Preprocessing Complete **********")
-print("\n****** Sentences stored in input.txt **********\n")
+print("****** Sentences stored in input.txt **********\n")
