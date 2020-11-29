@@ -329,6 +329,11 @@ while(inpNo != 4):
         plt.title("Total Income Graph")
         plt.xticks(x_pos, x)
         plt.show()
+        print("Choose from the below visualizations")
+        print("1. Total Income of all users ")
+        print("2. Total Expense of all users")
+        print("3. Specific User Expense Data")
+        print("4. Exit")
         inpNo = int(input())
     if(inpNo == 2):
         x = userlist
@@ -340,9 +345,14 @@ while(inpNo != 4):
         plt.title("Total Expense Graph")
         plt.xticks(x_pos, x)
         plt.show()
+        print("Choose from the below visualizations")
+        print("1. Total Income of all users ")
+        print("2. Total Expense of all users")
+        print("3. Specific User Expense Data")
+        print("4. Exit")
         inpNo = int(input())
     if(inpNo == 3):
-        print("Choose user name from the below list:")
+        print("Type User name from the below list:")
         print(users)
         userChoice = str(input())
         if(userChoice == "Harry"):
@@ -362,6 +372,11 @@ while(inpNo != 4):
             plt.legend(types)
             plt.title("Expense Distribution for Harry")
             plt.show()
+            print("Choose from the below visualizations")
+            print("1. Total Income of all users ")
+            print("2. Total Expense of all users")
+            print("3. Specific User Expense Data")
+            print("4. Exit")
             inpNo = int(input())
 
         if(userChoice == "Chris"):
@@ -381,6 +396,11 @@ while(inpNo != 4):
             plt.legend(types)
             plt.title("Expense Distribution for Chris")
             plt.show()
+            print("Choose from the below visualizations")
+            print("1. Total Income of all users ")
+            print("2. Total Expense of all users")
+            print("3. Specific User Expense Data")
+            print("4. Exit")
             inpNo = int(input())
 
         if(userChoice == "Tom"):
@@ -400,6 +420,11 @@ while(inpNo != 4):
             plt.legend(types)
             plt.title("Expense Distribution for Tom")
             plt.show()
+            print("Choose from the below visualizations")
+            print("1. Total Income of all users ")
+            print("2. Total Expense of all users")
+            print("3. Specific User Expense Data")
+            print("4. Exit")
             inpNo = int(input())
 
         if(userChoice == "Dave"):
@@ -418,4 +443,9 @@ while(inpNo != 4):
             plt.legend(types)
             plt.title("Expense Distribution for Dave")
             plt.show()
+            print("Choose from the below visualizations")
+            print("1. Total Income of all users ")
+            print("2. Total Expense of all users")
+            print("3. Specific User Expense Data")
+            print("4. Exit")
             inpNo = int(input())
