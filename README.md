@@ -1,1 +1,35 @@
-# SER531-Project---Group-19
+**SER 531 Project: Extracting insights from personal expenditure**
+**Group 19**
+
+**Requirements:**
+- Python3
+- rdflib
+- spacy
+- owlready2
+- matplotlib
+- pandas
+
+**System on which compiler and runtime are built:** Windows
+
+**Tool used:** Python, Protege.
+
+## YouTube link
+[Link to Demo]()
+
+## Ontology link
+[Ontology Visualization](http://www.visualdataweb.de/webvowl/#opts=cd=80;dd=90;#iri=https://raw.githubusercontent.com/san1197/SER531-Project---Group-19/main/categories.owl)
+
+# Execution
+## Runtime steps
+- Install the required libraries.
+- Import project folder in your local system.
+- Open the terminal and run the following command
+```bash
+    python preprocess.py
+```
+- The triples will be generated in 'triples.txt'
+- Run the following command to generate insights
+```bash
+    python tripleGen.py
+```
+- The output graphs can be seen through the terminal.
