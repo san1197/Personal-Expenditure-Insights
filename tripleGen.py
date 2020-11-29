@@ -1,5 +1,5 @@
 from owlready2 import get_ontology
-from rdflib import Graph, Literal, RDF, URIRef
+from rdflib import Graph, Namespace, Literal, RDF, URIRef
 import spacy
 
 '''Extracting sub, pred and obj from unstructured data'''
@@ -41,9 +41,9 @@ namespace = onto.get_namespace("https://raw.githubusercontent.com/san1197/SER531
 IncType = onto.search(iri = "*income")
 ExpType = onto.search(iri = "*expense")
 
+
 # To add N-Triples
 g = Graph()
-
 
 for sub, pred, obj in spo:
     sub_url = URIRef(sub)
@@ -51,15 +51,20 @@ for sub, pred, obj in spo:
     obj_url = Literal(obj)
     g.add((sub_url, pred_url, obj_url))
 
+ns = "<http://SER531/Project/Group19/"
+end = ">"
 f = open("triples.txt", "w")
 for s,p,o in g:
-    string = str(s) + "," + str(p) + "," +str(o)
+    sns = ns + str(s) + end
+    pns = ns + str(p) + end
+    ons = '"' + str(o) + '"'
+    string = sns + pns + ons
     f.write(string)
     f.write("\n")
 f.close()
 
 print("\n****** Triples Generated **********")
-print("\n****** Stored in triples.txt **********\n")
+print("****** Stored in triples.txt **********\n")
 
 # To derive insights using OWL
 totalIncome = 0
@@ -71,6 +76,8 @@ dictionary = {}
 listofDic = []
 count = 1
 expenseTypes = []
+
+
 for s,p,o in g:
     if str(s) not in users:
         users.append(str(s))
@@ -79,8 +86,6 @@ types = []
 for s,p,o in g:
     if str(p) not in types:
         types.append(str(p))
-
-
 
 for s,p,o in g:
     if str(p) not in expenseTypes:
@@ -306,10 +311,8 @@ for k in range(len(types)):
 
 
 
-
 import matplotlib.pyplot as plt
 plt.style.use('ggplot')
-
 print("Choose from the below visualizations")
 print("1. Total Income of all users ")
 print("2. Total Expense of all users")
