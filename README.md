@@ -31,3 +31,8 @@
     python tripleGen.py
 ```
 - The output graphs can be seen through the terminal.
+- If you want to summarize the triples back to sentences, run
+```bash
+    python summarize.py
+```
+- The sentences will be generated at summarization.txt
