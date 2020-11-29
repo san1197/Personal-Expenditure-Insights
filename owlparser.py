@@ -75,6 +75,13 @@ for s,p,o in g:
     if str(s) not in users:
         users.append(str(s))
 
+types = []
+for s,p,o in g:
+    if str(p) not in types:
+        types.append(str(p))
+
+
+
 for s,p,o in g:
     if str(p) not in expenseTypes:
         expenseTypes.append(str(p))
@@ -104,66 +111,12 @@ for s,p,o in g:
     uu += userkill[1]
     usersearch = onto.search(iri = uu)
     t1 = onto.Transaction(ttag,ofType=typeforEI,ofAmount=str(o),doneBy=usersearch)
-
-
 onto.save(file = "categorieswithIndividuals.owl")
 
-# for i in range(len(users)):
-#     totalIncome = 0
-#     totalExpense = 0
-#     maxExpense = 0
-#     maxExpenseOn = ''
-#     username = ''
-#     for s,p,o in g:
-#         if(str(s) == users[i]):
-#             username = str(s)
-#             appendstar = "*"
-#             appendstar += str(p)
-#             typeNS = onto.search(iri = appendstar)
-#             if(IncType[0] in list(typeNS[0].ancestors())):
-#                 totalIncome += float(o)
-#             elif(ExpType[0] in list(typeNS[0].ancestors())):
-#                 totalExpense += float(o)
-#                 maxExpense = max(maxExpense,float(o))
-#                 maxExpenseOn = str(p)
-#     print("\n")
-#     print("User:",username)
-#     print("Total Income:", totalIncome)
-#     print("Total Expense:", totalExpense)
-#     print("Maximum Expense:",maxExpense,"Spent on",maxExpenseOn)
 
 
 g1 = Graph()
 g1.parse("categorieswithIndividuals.owl")
-
-# Eref = URIRef("http://www.semanticweb.org/admin/ontologies/2020/10/category#expense")
-# Iref = URIRef("http://www.semanticweb.org/admin/ontologies/2020/10/category#income")
-
-# totalQuery = g1.query(
-#     '''
-#     PREFIX ie: <http://www.semanticweb.org/admin/ontologies/2020/10/category#>
-#     PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-#     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-#     PREFIX owl: <http://www.w3.org/2002/07/owl#>
-#     SELECT ?p ?a ?name ?log ?superClass
-#         WHERE {
-#             ?p rdf:type ie:User.
-#             ?p ie:hasName ?name.
-#             ?t ie:doneBy ?p.
-#             ?t ie:ofType ?log.
-#             ?t ie:ofAmount ?a.
-#             ?log rdfs:subClassOf ?parentClass.
-#             ?parentClass rdfs:subClassOf ?superClass.
-#             }
-#             ORDER BY ?name''')
-#
-#
-# for r in totalQuery:
-#     print(r[2],"spent",r[1],"on",r[3],"as", r[4])
-#     break
-
-
-
 
 incomeQuery = g1.query(
     '''
@@ -225,9 +178,8 @@ expenseQuery = g1.query(
             }
             ORDER BY ?name''')
 
-
 for i in range(len(users)):
-    totalIncome = 0
+    totalExpense = 0
     maxExpense = 0
     maxExpenseOn = ''
     username = ''
@@ -235,55 +187,235 @@ for i in range(len(users)):
         expenseType = str(r[3]).split("#")
         if(str(r[2]) == users[i]):
             username = r[2]
-            totalIncome += float(r[1])
-            maxIncome = max(maxIncome,float(r[1]))
-            maxIncomeOn = expenseType[1]
+            totalExpense += float(r[1])
+            maxExpense = max(maxExpense,float(r[1]))
+            maxExpenseOn = expenseType[1]
 
     userlist2.append(str(username))
-    totalExpenseList.append(totalIncome)
-    maxExpenseList.append(maxIncome)
-    maxExpenseOnList.append(maxIncomeOn)
+    totalExpenseList.append(totalExpense)
+    maxExpenseList.append(maxExpense)
+    maxExpenseOnList.append(maxExpenseOn)
+
+userExpenseQueryH = g1.query(
+    '''
+    PREFIX ie: <http://www.semanticweb.org/admin/ontologies/2020/10/category#>
+    PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    SELECT ?p ?a ?name ?log
+        WHERE {
+            ?p rdf:type ie:User.
+            ?p ie:hasName ?name.
+            ?t ie:doneBy ?p.
+            ?t ie:ofType ?log.
+            ?t ie:ofAmount ?a.
+            ?log rdfs:subClassOf ?parentClass.
+            ?parentClass rdfs:subClassOf ie:expense.
+            FILTER (regex(str(?name),"Harry"))
+            }''')
+
+typeAmountListH = []
+for k in range(len(types)):
+    typeAmount = 0
+    for r in userExpenseQueryH:
+        expenseType = str(r[3]).split("#")
+        if(expenseType[1] in types[k]):
+            typeAmount += float(r[1])
+    typeAmountListH.append(typeAmount)
+
+userExpenseQueryD = g1.query(
+    '''
+    PREFIX ie: <http://www.semanticweb.org/admin/ontologies/2020/10/category#>
+    PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    SELECT ?p ?a ?name ?log
+        WHERE {
+            ?p rdf:type ie:User.
+            ?p ie:hasName ?name.
+            ?t ie:doneBy ?p.
+            ?t ie:ofType ?log.
+            ?t ie:ofAmount ?a.
+            ?log rdfs:subClassOf ?parentClass.
+            ?parentClass rdfs:subClassOf ie:expense.
+            FILTER (regex(str(?name),"Dave"))
+            }''')
+
+typeAmountListD = []
+for k in range(len(types)):
+    typeAmount = 0
+    for r in userExpenseQueryD:
+        expenseType = str(r[3]).split("#")
+        if(expenseType[1] in types[k]):
+            typeAmount += float(r[1])
+    typeAmountListD.append(typeAmount)
+
+userExpenseQueryC = g1.query(
+    '''
+    PREFIX ie: <http://www.semanticweb.org/admin/ontologies/2020/10/category#>
+    PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    SELECT ?p ?a ?name ?log
+        WHERE {
+            ?p rdf:type ie:User.
+            ?p ie:hasName ?name.
+            ?t ie:doneBy ?p.
+            ?t ie:ofType ?log.
+            ?t ie:ofAmount ?a.
+            ?log rdfs:subClassOf ?parentClass.
+            ?parentClass rdfs:subClassOf ie:expense.
+            FILTER (regex(str(?name),"Chris"))
+            }''')
+
+typeAmountListC = []
+for k in range(len(types)):
+    typeAmount = 0
+    for r in userExpenseQueryC:
+        expenseType = str(r[3]).split("#")
+        if(expenseType[1] in types[k]):
+            typeAmount += float(r[1])
+    typeAmountListC.append(typeAmount)
+
+userExpenseQueryT = g1.query(
+    '''
+    PREFIX ie: <http://www.semanticweb.org/admin/ontologies/2020/10/category#>
+    PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    SELECT ?p ?a ?name ?log
+        WHERE {
+            ?p rdf:type ie:User.
+            ?p ie:hasName ?name.
+            ?t ie:doneBy ?p.
+            ?t ie:ofType ?log.
+            ?t ie:ofAmount ?a.
+            ?log rdfs:subClassOf ?parentClass.
+            ?parentClass rdfs:subClassOf ie:expense.
+            FILTER (regex(str(?name),"Tom"))
+            }''')
+
+typeAmountListT = []
+for k in range(len(types)):
+    typeAmount = 0
+    for r in userExpenseQueryT:
+        expenseType = str(r[3]).split("#")
+        if(expenseType[1] in types[k]):
+            typeAmount += float(r[1])
+    typeAmountListT.append(typeAmount)
+
+
 
 
 import matplotlib.pyplot as plt
 plt.style.use('ggplot')
 
-x = userlist
-energy = totalIncomeList
-x_pos = [i for i, _ in enumerate(x)]
-plt.bar(x_pos, energy, color='green')
-plt.xlabel("Income")
-plt.ylabel("Dollars($)")
-plt.title("Total Income Graph")
-plt.xticks(x_pos, x)
-plt.show()
+print("Choose from the below visualizations")
+print("1. Total Income of all users ")
+print("2. Total Expense of all users")
+print("3. Specific User Expense Data")
+print("4. Exit")
 
-x = userlist
-energy = totalExpenseList
-x_pos = [i for i, _ in enumerate(x)]
-plt.bar(x_pos, energy, color='green')
-plt.xlabel("Expense")
-plt.ylabel("Dollars($)")
-plt.title("Total Expense Graph")
-plt.xticks(x_pos, x)
-plt.show()
+inpNo = int(input())
 
-x = userlist
-energy = maxIncomeList
-x_pos = [i for i, _ in enumerate(x)]
-plt.bar(x_pos, energy, color='green')
-plt.xlabel("Expense")
-plt.ylabel("Dollars($)")
-plt.title("Maximum Income Distribution between Users")
-plt.xticks(x_pos, x)
-plt.show()
+while(inpNo != 4):
+    if(inpNo == 1):
+        x = userlist
+        energy = totalIncomeList
+        x_pos = [i for i, _ in enumerate(x)]
+        plt.bar(x_pos, energy, color='green')
+        plt.xlabel("Income")
+        plt.ylabel("Dollars($)")
+        plt.title("Total Income Graph")
+        plt.xticks(x_pos, x)
+        plt.show()
+        inpNo = int(input())
+    if(inpNo == 2):
+        x = userlist
+        energy = totalExpenseList
+        x_pos = [i for i, _ in enumerate(x)]
+        plt.bar(x_pos, energy, color='green')
+        plt.xlabel("Expense")
+        plt.ylabel("Dollars($)")
+        plt.title("Total Expense Graph")
+        plt.xticks(x_pos, x)
+        plt.show()
+        inpNo = int(input())
+    if(inpNo == 3):
+        print("Choose user name from the below list:")
+        print(users)
+        userChoice = str(input())
+        if(userChoice == "Harry"):
+            typesFinal = []
+            typeAmountFinal = []
+            for i in range(len(types)):
+                if(typeAmountListH[i] != 0):
+                    typesFinal.append(types[i])
+                    typeAmountFinal.append(typeAmountListH[i])
 
-x = userlist
-energy = maxExpenseList
-x_pos = [i for i, _ in enumerate(x)]
-plt.bar(x_pos, energy, color='green')
-plt.xlabel("Expense")
-plt.ylabel("Dollars($)")
-plt.title("Maximum Expense Distribution between Users")
-plt.xticks(x_pos, x)
-plt.show()
+            labels = typesFinal
+            sizes = typeAmountFinal
+
+            fig1, ax1 = plt.subplots()
+            ax1.pie(sizes,shadow=True, startangle=90)
+            ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+            plt.legend(types)
+            plt.title("Expense Distribution for Harry")
+            plt.show()
+            inpNo = int(input())
+
+        if(userChoice == "Chris"):
+            typesFinal = []
+            typeAmountFinal = []
+            for i in range(len(types)):
+                if(typeAmountListC[i] != 0):
+                    typesFinal.append(types[i])
+                    typeAmountFinal.append(typeAmountListC[i])
+
+            labels = typesFinal
+            sizes = typeAmountFinal
+
+            fig1, ax1 = plt.subplots()
+            ax1.pie(sizes,shadow=True, startangle=90)
+            ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+            plt.legend(types)
+            plt.title("Expense Distribution for Chris")
+            plt.show()
+            inpNo = int(input())
+
+        if(userChoice == "Tom"):
+            typesFinal = []
+            typeAmountFinal = []
+            for i in range(len(types)):
+                if(typeAmountListT[i] != 0):
+                    typesFinal.append(types[i])
+                    typeAmountFinal.append(typeAmountListT[i])
+
+            labels = typesFinal
+            sizes = typeAmountFinal
+
+            fig1, ax1 = plt.subplots()
+            ax1.pie(sizes,shadow=True, startangle=90)
+            ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+            plt.legend(types)
+            plt.title("Expense Distribution for Tom")
+            plt.show()
+            inpNo = int(input())
+
+        if(userChoice == "Dave"):
+            typesFinal = []
+            typeAmountFinal = []
+            for i in range(len(types)):
+                if(typeAmountListD[i] != 0):
+                    typesFinal.append(types[i])
+                    typeAmountFinal.append(typeAmountListD[i])
+
+            labels = typesFinal
+            sizes = typeAmountFinal
+            fig1, ax1 = plt.subplots()
+            ax1.pie(sizes,shadow=True, startangle=90)
+            ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+            plt.legend(types)
+            plt.title("Expense Distribution for Dave")
+            plt.show()
+            inpNo = int(input())
