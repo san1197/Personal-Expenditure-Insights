@@ -1,4 +1,5 @@
-# SER 531 Project: Extracting insights from Personal Expenditure - Group 19
+# SER 531 Project - Group 19
+# Extracting insights from Personal Expenditure 
 
 ## Requirements:
 - Python3
