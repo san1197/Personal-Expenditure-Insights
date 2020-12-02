@@ -1,5 +1,15 @@
 import sys, random
-#To convert triples to sentences
+
+
+def normaliseTripplesPattern(inputString):
+    str = inputString  # take copy of the input
+    strk = str.replace('<http://SER531/Project/Group19/', ' ')  # replace header
+    strm = strk.replace('>', ',')  # replace >
+    strq = strm.replace('"', '')  # replace quotes
+    strz = strq.replace(' ', '')  # replace spaces between the line
+    return strz
+
+
 if __name__ == '__main__':
     f = open("triples.txt", "r")
     lines = f.readlines()
@@ -8,15 +18,15 @@ if __name__ == '__main__':
     summarizeFile = open("summarization.txt", "w")
     for l in lines:
         l.strip(" ")
-        x = l.split(',')
+        x = normaliseTripplesPattern(l).split(',')
         subject = x[0]
         predicate = x[1]
         object = x[2].strip()
-        activity = random.choice([random.choice(spent),random.choice(received)])
+        activity = random.choice([random.choice(spent), random.choice(received)])
         if activity == 'exhausted' or activity == 'spent':
             sentence = subject + " " + activity + " $" + object + " on " + predicate
         else:
             sentence = subject + " " + activity + " $" + object + " for " + predicate
         summarizeFile.write(sentence + "\n")
-    print("\n****** Summarization Complete **********")
+    print("\n****** Summarization Complete **********\n")
     print("****** Sentences stored in summarization.txt **********\n")
