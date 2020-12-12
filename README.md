@@ -11,10 +11,10 @@
 
 ## A glimpse of the insights generated:
 **Expense Distribution of specific user:**
-![ExpDist](images/SpecificExpenseDist.png)
+![ExpDist](/images/SpecificExpenseDist.png)
 
 **Total Income of all users:**
-![TotalIncome](images/totalIncome.png)
+![TotalIncome](/images/totalIncome.png)
 
 ## Requirements:
 - Python3
