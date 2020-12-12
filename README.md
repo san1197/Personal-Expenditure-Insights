@@ -1,5 +1,20 @@
-# SER 531 Project - Group 19
-# Extracting insights from Personal Expenditure 
+# Personal Expenditure Insights
+
+## How does it work?
+[!Flowchart](Flowchart.png)
+
+## What does it do?
+- Extracts useful information from transactional data.
+- Compares expenditure of several users.
+- Provides a visual representation of a user's monthly expenditure.
+- Uses OWL Ontologies to map transactions into categories. Check the Ontology at [OWL](http://www.visualdataweb.de/webvowl/#opts=cd=80;dd=90;%23iri=https://raw.githubusercontent.com/san1197/SER531-Project---Group-19/main/categories.owl)]
+
+## A glimpse of the insights generated:
+** Expense Distribution of specific user:**
+[!ExpDist](SpecificExpenseDist)
+
+** Total Income of all users:**
+[!TotalIncome](totalIncome)
 
 ## Requirements:
 - Python3
@@ -12,12 +27,6 @@
 **System on which compiler and runtime are built:** Windows
 
 **Tools used:** Python, Protege.
-
-## Video Demonstration
-[YouTube Video](https://www.youtube.com/watch?v=KmKTgx5wt_Y&feature=youtu.be)
-
-## Ontology
-[Ontology Visualization](http://www.visualdataweb.de/webvowl/#opts=cd=80;dd=90;#iri=https://raw.githubusercontent.com/san1197/SER531-Project---Group-19/main/categories.owl)
 
 ## Execution
 - Install the required libraries and locate to the working directory.
@@ -36,3 +45,9 @@
     python summarize.py
 ```
 - The sentences will be generated at summarization.txt.
+
+## Video Demonstration
+[YouTube Video](https://www.youtube.com/watch?v=KmKTgx5wt_Y&feature=youtu.be)
+
+## Ontology
+[Ontology Visualization](http://www.visualdataweb.de/webvowl/#opts=cd=80;dd=90;#iri=https://raw.githubusercontent.com/san1197/SER531-Project---Group-19/main/categories.owl)
