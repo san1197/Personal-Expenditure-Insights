@@ -1,7 +1,7 @@
 # Personal Expenditure Insights
 
 ## How does it work?
-![Flowchart](..images/Flowchart.png)
+![Flowchart](/images/Flowchart.png)
 
 ## What does it do?
 - Extracts useful information from transactional data.
