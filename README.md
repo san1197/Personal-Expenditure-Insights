@@ -1,7 +1,7 @@
 # Personal Expenditure Insights
 
 ## How does it work?
-![Flowchart](Flowchart.png)
+![Flowchart](data/Flowchart.png)
 
 ## What does it do?
 - Extracts useful information from transactional data.
@@ -11,10 +11,10 @@
 
 ## A glimpse of the insights generated:
 ** Expense Distribution of specific user:**
-![ExpDist](SpecificExpenseDist.png)
+![ExpDist](data/SpecificExpenseDist.png)
 
 ** Total Income of all users:**
-![TotalIncome](totalIncome.png)
+![TotalIncome](data/totalIncome.png)
 
 ## Requirements:
 - Python3
