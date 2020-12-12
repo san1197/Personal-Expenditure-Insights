@@ -10,10 +10,8 @@
 - Uses OWL Ontologies to map transactions into categories. Check the Ontology [here](http://www.visualdataweb.de/webvowl/#opts=cd=80;dd=90;%23iri=https://raw.githubusercontent.com/san1197/SER531-Project---Group-19/main/categories.owl)
 
 ## A glimpse of the insights generated:
-**Expense Distribution of specific user:**
 ![ExpDist](/images/SpecificExpenseDist.png)
 
-**Total Income of all users:**
 ![TotalIncome](/images/totalIncome.png)
 
 ## Requirements:
