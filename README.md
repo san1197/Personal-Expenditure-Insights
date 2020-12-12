@@ -1,7 +1,7 @@
 # Personal Expenditure Insights
 
 ## How does it work?
-![Flowchart](images/Flowchart.png)
+![Flowchart](..images/Flowchart.png)
 
 ## What does it do?
 - Extracts useful information from transactional data.
@@ -10,10 +10,10 @@
 - Uses OWL Ontologies to map transactions into categories. Check the Ontology at [OWL](http://www.visualdataweb.de/webvowl/#opts=cd=80;dd=90;%23iri=https://raw.githubusercontent.com/san1197/SER531-Project---Group-19/main/categories.owl)]
 
 ## A glimpse of the insights generated:
-** Expense Distribution of specific user:**
+**Expense Distribution of specific user:**
 ![ExpDist](images/SpecificExpenseDist.png)
 
-** Total Income of all users:**
+**Total Income of all users:**
 ![TotalIncome](images/totalIncome.png)
 
 ## Requirements:
