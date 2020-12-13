@@ -1,8 +1,5 @@
 # Personal Expenditure Insights
 
-## How does it work?
-![Flowchart](/images/Flowchart.png)
-
 ## What does it do?
 - Extracts useful information from transactional data.
 - Compares expenditure of several users.
@@ -13,6 +10,9 @@
 ![ExpDist](/images/SpecificExpenseDist.png)
 
 ![TotalIncome](/images/totalIncome.png)
+
+## How does it work?
+![Flowchart](/images/Flowchart.png)
 
 ## Requirements:
 - Python3
